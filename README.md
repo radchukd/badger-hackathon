@@ -1,4 +1,4 @@
-# badger-hackathon
+# Badger Hackathon
 
 The Badger Hackathon repo is a playground to be used for different hackathon and bounty tasks.  Each task will have a specific branch created that participants can fork, and details / scaffolding will be provided for participants to reference.
 
