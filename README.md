@@ -18,6 +18,8 @@ The Badger core team has developed an API that is available to consume to provid
 -	Figma Design: [Portfolio](https://www.figma.com/file/RkfjApAEdctYaKT3JgiH1M/Badger-Portfolio?node-id=0%3A1)
 -	API Documentation: TBA
 -	API Interface Spec: [Interface](https://github.com/Badger-Finance/badger-api/blob/staging/src/accounts/interfaces/account.interface.ts)
+-	Material UI: [Material-UI](https://material-ui.com/getting-started/installation/)
+-	MobX: [MobX](https://mobx.js.org/README.html)
 
 ## Get Started
 
