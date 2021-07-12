@@ -1,14 +1,22 @@
-import React from 'react';
+import { CssBaseline } from '@material-ui/core';
+import { startRouter } from 'mobx-router';
+import React, { createContext } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import routes from './config/routes';
-import { startRouter } from 'mobx-router';
+import store, { RootStore } from './mobx/store';
 
-import store from './mobx/store';
+export const StoreContext = createContext({} as RootStore);
+export const StoreProvider = StoreContext.Provider;
 
 startRouter(routes, store, {
-	html5history: true, // or false if you want to use hash based routing
+  html5history: true,
 });
 
-ReactDOM.render(<App store={store} />, document.getElementById('root'));
+ReactDOM.render(
+  <StoreProvider value={store}>
+    <CssBaseline />
+    <App />
+  </StoreProvider>,
+  document.getElementById('root'),
+);
