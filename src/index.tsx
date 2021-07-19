@@ -1,9 +1,12 @@
-import { CssBaseline } from '@material-ui/core';
 import { startRouter } from 'mobx-router';
 import React, { createContext } from 'react';
 import ReactDOM from 'react-dom';
+
+import { CssBaseline, ThemeProvider } from '@material-ui/core';
+
 import App from './App';
 import routes from './config/routes';
+import theme from './config/theme';
 import store, { RootStore } from './mobx/store';
 
 export const StoreContext = createContext({} as RootStore);
@@ -15,8 +18,10 @@ startRouter(routes, store, {
 
 ReactDOM.render(
   <StoreProvider value={store}>
-    <CssBaseline />
-    <App />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <App />
+    </ThemeProvider>
   </StoreProvider>,
   document.getElementById('root'),
 );

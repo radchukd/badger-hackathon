@@ -8,11 +8,7 @@ module.exports = {
       jsx: true, // Allows for the parsing of JSX
     },
   },
-	ignorePatterns: [
-		'.*',
-		'build',
-		'node_modules',
-	],
+  ignorePatterns: ['.*', 'build', 'node_modules'],
   settings: {
     react: {
       version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
@@ -26,6 +22,7 @@ module.exports = {
   ],
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
+    'react/prop-types': 'off',
     '@typescript-eslint/': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',

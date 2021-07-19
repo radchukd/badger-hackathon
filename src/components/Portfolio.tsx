@@ -1,45 +1,28 @@
-import { Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core';
 import { observer } from 'mobx-react-lite';
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import React from 'react';
-import { useContext } from 'react';
-import { StoreContext } from '..';
-import ReactJson from 'react-json-view';
+import React, { useContext } from 'react';
+
+import { Box, CircularProgress, Grid, makeStyles } from '@material-ui/core';
+
+import { StoreContext } from '../';
+import NetWorthCard from './NetWorthCard';
+import PendingCard from './PendingCard';
+import BoostCard from './BoostCard';
+import EarningsGraphCard from './EarningsGraphCard';
+import AllocationCard from './AllocationCard';
+import BalanceTableCard from './BalanceTableCard';
+import { formatNumber } from '../utils/numberUtils';
 
 const useStyles = makeStyles((theme) => ({
   rootContainer: {
     height: '100%',
+    padding: `${theme.spacing(6)}px ${theme.spacing(2)}px`,
+    background: `url('assets/background.png') no-repeat center center fixed`,
   },
-  links: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    marginBottom: theme.spacing(1),
-    width: '30%',
+  content: {
     margin: 'auto',
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
-    },
-  },
-  header: {
-    paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(3),
-  },
-  anchor: {
-    textDecoration: 'none',
-    color: 'inherit',
-    cursor: 'pointer',
-    display: 'flex',
-    justifyContent: 'space-between',
-    minWidth: '65px',
-  },
-  json: {
-    margin: 'auto',
-    maxWidth: '60%',
-    maxHeight: '600px',
-    overflow: 'auto',
-    [theme.breakpoints.down('sm')]: {
-      maxWidth: '95%',
+    maxWidth: '80%',
+    [theme.breakpoints.down('md')]: {
+      maxWidth: '100%',
     },
   },
 }));
@@ -47,43 +30,117 @@ const useStyles = makeStyles((theme) => ({
 const Portfolio = observer(() => {
   const classes = useStyles();
   const store = useContext(StoreContext);
-  const { account } = store;
-
-  const resources: Record<string, string> = {
-    'API Documentation': 'https://docs.badger.finance/',
-    'Portfolio Figma': 'https://www.figma.com/file/RkfjApAEdctYaKT3JgiH1M/Badger-Portfolio?node-id=0%3A1',
-    'Github Repository': 'https://github.com/Badger-Finance/badger-hackathon/tree/badger-portfolio-hackathon',
-    'Badger Builder Discord': 'https://discord.gg/AUmkPJCf',
-  };
+  const {
+    account,
+    assetValue,
+    assetValueBTC,
+    allocationDistribution,
+    allocationPerAsset,
+    totalAllocation,
+    strategyROI,
+  } = store;
 
   return (
-    <div className={classes.rootContainer}>
-      <Typography variant="h4" align="center" className={classes.header}>
-        Badger Portfolio
-      </Typography>
-      {Object.entries(resources).map((res) => (
-        <div key={res[0]} className={classes.links}>
-          <Typography align="right">{res[0]}</Typography>
-          <a href={res[1]} target="_blank" rel="noreferrer" className={classes.anchor}>
-            <Typography align="left">View</Typography>
-            <ExitToAppIcon />
-          </a>
-        </div>
-      ))}
-      <Typography variant="h5" align="center" className={classes.header}>
-        Example Response
-      </Typography>
-      <div className={classes.json}>
-        <ReactJson
-          name={false}
-          src={account ?? { loading: true }}
-          theme="ashes"
-          indentWidth={2}
-          collapsed={1}
-          sortKeys
-        />
-      </div>
-    </div>
+    <Box className={classes.rootContainer}>
+      {!account ? (
+        <Box display="flex" alignItems="center" justifyContent="center" height="100vh">
+          <CircularProgress color="secondary" />
+        </Box>
+      ) : (
+        <Box className={classes.content}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+              <NetWorthCard />
+            </Grid>
+            <Grid item xs={12} md={3}>
+              <PendingCard />
+            </Grid>
+            <Grid item xs={12} md={3}>
+              <BoostCard />
+            </Grid>
+            <Grid item xs={12}>
+              <EarningsGraphCard />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <AllocationCard title="Asset Allocation" subtitle="Subtext" data={allocationDistribution('balance')} />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <AllocationCard
+                title="Strategy Allocation"
+                subtitle="Subtext"
+                data={allocationDistribution('strategy')}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <BalanceTableCard
+                title="Asset Balances"
+                title2={formatNumber(totalAllocation(false, 'balance'), 'currency')}
+                subtitle1="Assets that are in your wallet"
+                subtitle2="Your total asset holdings"
+                headCells={[
+                  { value: 'Tokens', align: 'left' },
+                  { value: 'Portfolio % Alloc.', align: 'center' },
+                  { value: 'Price', align: 'right' },
+                  { value: 'Balance', align: 'right' },
+                ]}
+                bodyCells={
+                  account?.balances?.map((balance) => [
+                    [
+                      { value: balance.asset, align: 'left' },
+                      { value: formatNumber(balance.value, 'currency'), align: 'left' },
+                    ],
+                    { value: formatNumber(allocationPerAsset(balance.value, 'balance'), 'percent'), align: 'center' },
+                    [
+                      { value: formatNumber(assetValue(balance), 'currency'), align: 'right' },
+                      { value: `${formatNumber(assetValueBTC(balance), 'decimal', 5)} BTC`, align: 'right' },
+                    ],
+                    [
+                      { value: formatNumber(balance.balance, 'currency'), align: 'right' },
+                      { value: formatNumber(balance.value, 'currency'), align: 'right' },
+                    ],
+                  ]) ?? []
+                }
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <BalanceTableCard
+                title="Strategy Balances"
+                title2={formatNumber(totalAllocation(false, 'strategy'), 'currency')}
+                subtitle1="Balances across all strategies"
+                subtitle2="Your total  strategy balances"
+                headCells={[
+                  { value: 'Strategy', align: 'left' },
+                  { value: 'Portfolio % Alloc.', align: 'center' },
+                  { value: 'Yearly ROI', align: 'center' },
+                  { value: 'Deposit Balance', align: 'right' },
+                ]}
+                bodyCells={
+                  account?.balances?.map((balance) => [
+                    [
+                      { value: balance.asset, align: 'left' },
+                      { value: formatNumber(balance.earnedValue, 'currency'), align: 'left' },
+                    ],
+                    {
+                      value: formatNumber(allocationPerAsset(balance.earnedValue, 'strategy'), 'percent'),
+                      align: 'center',
+                    },
+                    {
+                      value: `${formatNumber(strategyROI(balance.asset), 'decimal')}%`,
+                      color: 'info.main',
+                      align: 'center',
+                    }, // TODO: compute
+                    [
+                      { value: formatNumber(balance.earnedBalance, 'decimal'), align: 'right' },
+                      { value: formatNumber(balance.earnedValue, 'currency'), align: 'right' },
+                    ],
+                  ]) ?? []
+                }
+              />
+            </Grid>
+          </Grid>
+        </Box>
+      )}
+    </Box>
   );
 });
 
