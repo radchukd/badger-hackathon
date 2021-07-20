@@ -1,45 +1,35 @@
 import clsx from 'clsx';
 import { observer } from 'mobx-react-lite';
 import React, { useContext } from 'react';
-import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, ResponsiveContainer, Tooltip } from 'recharts';
 
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  Card,
-  CardContent,
-  Checkbox,
-  FormControlLabel,
-  Grid,
-  IconButton,
-  ListItem,
-  ListItemText,
-  makeStyles,
-  Popper,
-  Typography,
-} from '@material-ui/core';
-import { ArrowDropDown, Close, FiberManualRecord } from '@material-ui/icons';
+import { Box, Button, ButtonGroup, Card, CardContent, makeStyles, Popper, Typography } from '@material-ui/core';
+import { Cached, ExpandMore, FiberManualRecord } from '@material-ui/icons';
 
 import { StoreContext } from '../';
 import useCardStyles from '../styles/cardStyles';
+import { formatNumber } from '../utils/numberUtils';
+import VaultSelector from './VaultSelector';
 
 const useStyles = makeStyles((theme) => ({
-  dropdownContainer: {
-    padding: theme.spacing(2),
+  periodButton: {
+    color: theme.palette.primary.light,
+    fontWeight: 'normal',
+  },
+  normalCaseButton: {
+    textTransform: 'none',
+  },
+  normalPeriodButton: {
     backgroundColor: theme.palette.background.paper,
-    width: '55vw',
-    borderRadius: theme.spacing(1),
   },
-  closeIcon: {
-    color: theme.palette.primary.light,
+  selectedPeriodButton: {
+    backgroundColor: theme.palette.primary.dark,
   },
-  vaultItem: {
-    padding: theme.spacing(1),
-    paddingLeft: 0,
-  },
-  vaultName: {
-    color: theme.palette.primary.light,
+  chartContainer: { backgroundColor: '#101010' },
+  refreshIcon: {
+    marginRight: theme.spacing(1),
+    fontSize: '14px',
+    fill: '#444444',
   },
 }));
 
@@ -88,6 +78,24 @@ const data = [
   },
 ];
 
+const vaults = [
+  [
+    { icon: 'DIGG-WBTC.png', value: 'wBTC/Digg', labels: ['UNI'] },
+    { icon: 'BADGER-WBTC.png', value: 'Badger/wBTC', labels: ['UNI'] },
+  ],
+  [
+    { icon: 'SLP-DIGG-WBTC.png', value: 'Wrapped BTC/Digg', labels: ['SUSHI'] },
+    { icon: 'SLP-BADGER-WBTC.png', value: 'Wrapped BTC/Badger', labels: ['SUSHI'] },
+    { icon: 'SLP-WBTC-ETH.png', value: 'Wrapped BTC/Wrapped Ether', labels: ['SUSHI'] },
+  ],
+  [
+    { icon: 'UNI-WBTC-DIGG.png', value: 'crvRenWBTC', labels: ['CURVE'] },
+    { icon: 'UNI-WBTC-DIGG.png', value: 'renBTC/wBTC/sBTC', labels: ['CURVE'] },
+    { icon: 'UNI-WBTC-DIGG.png', value: 'tBTC/sBTCCrv LP', labels: ['CURVE'] },
+    { icon: 'UNI-WBTC-DIGG.png', value: 'crvRenWBTC', labels: ['CURVE', 'HARVEST'] },
+  ],
+];
+
 type GraphPeriod = '1D' | '1W' | '1M' | '1Y' | 'All Time';
 
 const graphPeriods: Array<GraphPeriod> = ['1D', '1W', '1M', '1Y', 'All Time'];
@@ -95,10 +103,10 @@ const graphPeriods: Array<GraphPeriod> = ['1D', '1W', '1M', '1Y', 'All Time'];
 const EarningsGraphCard = observer(() => {
   const classes = { ...useStyles(), ...useCardStyles() };
   const store = useContext(StoreContext);
-  const { vaults } = store;
+  const { account /* , vaults */, earnedBadger } = store;
   const [vaultsMenuAnchor, setVaultsMenuAnchor] = React.useState<HTMLElement | null>(null);
+  const [selectedVaults, setSelectedVaults] = React.useState<Array<string>>(vaults.flat().map((vault) => vault.value));
   const [graphPeriod, setGraphPeriod] = React.useState<GraphPeriod>('1W');
-  console.log(vaults, graphPeriod);
 
   return (
     <Card className={classes.cardRoot}>
@@ -115,88 +123,65 @@ const EarningsGraphCard = observer(() => {
               <Button
                 aria-controls="vaults-menu"
                 aria-haspopup="true"
+                variant="contained"
+                color="primary"
+                className={clsx(classes.cardSubheading2, classes.normalCaseButton)}
                 onClick={(event) => setVaultsMenuAnchor(vaultsMenuAnchor ? null : event.currentTarget)}
               >
-                All Sett Vaults
-                <ArrowDropDown />
+                <Box display="flex" alignItems="center" justifyContent="space-between">
+                  All Sett Vaults
+                  <ExpandMore fontSize="small" />
+                </Box>
               </Button>
             </Box>
             <Popper
               id="vaults-menu"
               open={Boolean(vaultsMenuAnchor)}
               anchorEl={vaultsMenuAnchor}
-              placement="top-start"
+              placement="bottom-start"
               keepMounted
             >
-              <Box className={classes.dropdownContainer}>
-                <Box display="flex" justifyContent="space-between">
-                  <FormControlLabel control={<Checkbox name="allSettVaultsCheckbox" />} label="All Sett Vaults" />
-                  <IconButton onClick={() => setVaultsMenuAnchor(null)}>
-                    <Close className={classes.closeIcon} />
-                  </IconButton>
-                </Box>
-                <Grid container>
-                  <Grid item xs={12} md={4}>
-                    <Box display="flex" flexDirection="column">
-                      {['DIGG-WBTC.png', 'BADGER-WBTC.png'].map((asset, index) => (
-                        <ListItem key={index} button className={classes.vaultItem}>
-                          <Box mr={1}>
-                            <img src={`/assets/${asset}`} width="24" height="24" />
-                          </Box>
-                          <ListItemText primary={asset} primaryTypographyProps={{ className: classes.vaultName }} />
-                        </ListItem>
-                      ))}
-                    </Box>
-                  </Grid>
-                  <Grid item xs={12} md={4}>
-                    <Box display="flex" flexDirection="column">
-                      {['SLP-DIGG-WBTC.png', 'SLP-BADGER-WBTC.png', 'SLP-WBTC-ETH.png'].map((asset, index) => (
-                        <ListItem key={index} button className={classes.vaultItem}>
-                          <Box mr={1}>
-                            <img src={`/assets/${asset}`} width="24" height="24" />
-                          </Box>
-                          <ListItemText
-                            primary={asset}
-                            primaryTypographyProps={{ className: clsx(classes.vaultName, classes.cardSubheading4) }}
-                          />
-                        </ListItem>
-                      ))}
-                    </Box>
-                  </Grid>
-                  <Grid item xs={12} md={4}>
-                    <Box display="flex" flexDirection="column">
-                      {['UNI-WBTC-DIGG.png', 'UNI-WBTC-DIGG.png', 'UNI-WBTC-DIGG.png', 'UNI-WBTC-DIGG.png'].map(
-                        (asset, index) => (
-                          <ListItem key={index} button className={classes.vaultItem}>
-                            <Box mr={1}>
-                              <img src={`/assets/${asset}`} width="24" height="24" />
-                            </Box>
-                            <ListItemText
-                              primary={asset}
-                              primaryTypographyProps={{
-                                className: clsx(classes.vaultName, classes.cardSubheading4),
-                              }}
-                            />
-                          </ListItem>
-                        ),
-                      )}
-                    </Box>
-                  </Grid>
-                </Grid>
-              </Box>
+              <VaultSelector
+                vaults={vaults}
+                onClose={() => setVaultsMenuAnchor(null)}
+                onAllClick={() => {
+                  if (selectedVaults.length === vaults.flat().length) setSelectedVaults([]);
+                  else setSelectedVaults(vaults.flat().map((vault) => vault.value));
+                }}
+                isAllChecked={selectedVaults.length === vaults.flat().length}
+                onItemClick={(item: string) => {
+                  setSelectedVaults((selectedVaults) =>
+                    selectedVaults?.includes(item)
+                      ? selectedVaults.filter((vault) => vault != item)
+                      : [...selectedVaults, item],
+                  );
+                }}
+                isItemChecked={(item: string) => selectedVaults.includes(item)}
+              />
             </Popper>
           </Box>
           <Box display="flex" flexDirection="column" alignItems="flex-end">
             <Typography variant="h6">
               <Box fontWeight="fontWeightRegular" color="info.main">
-                $1,434.66
+                {formatNumber(account?.earnedValue, 'currency')}
               </Box>
             </Typography>
-            <Box className={classes.cardSubheading2}>271.14 $BADGER</Box>
+            <Box className={classes.cardSubheading2}>{formatNumber(earnedBadger, 'decimal')} $BADGER</Box>
             <Box mt={2}>
               <ButtonGroup>
                 {graphPeriods.map((value, index) => (
-                  <Button key={index} onClick={() => setGraphPeriod(value)}>
+                  <Button
+                    key={index}
+                    variant="contained"
+                    color="secondary"
+                    className={clsx(
+                      classes.periodButton,
+                      classes.cardSubheading2,
+                      value === graphPeriod ? classes.selectedPeriodButton : classes.normalPeriodButton,
+                      value === 'All Time' ? classes.normalCaseButton : undefined,
+                    )}
+                    onClick={() => setGraphPeriod(value)}
+                  >
                     {value}
                   </Button>
                 ))}
@@ -205,27 +190,26 @@ const EarningsGraphCard = observer(() => {
           </Box>
         </Box>
         <Box mt={2}>
-          <ResponsiveContainer width="100%" height={465}>
-            <AreaChart
-              height={465}
-              data={data}
-              margin={{
-                top: 10,
-                right: 30,
-                left: 0,
-                bottom: 0,
-              }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
-              <Area type="monotone" dataKey="uv" stackId="1" stroke="#8884d8" fill="#8884d8" />
-              <Area type="monotone" dataKey="pv" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
-              <Area type="monotone" dataKey="amt" stackId="1" stroke="#ffc658" fill="#ffc658" />
-            </AreaChart>
-          </ResponsiveContainer>
-          <Box display="flex" justifyContent="space-between">
+          <Box className={classes.chartContainer}>
+            <ResponsiveContainer width="100%" height={465}>
+              <AreaChart height={465} data={data}>
+                <defs>
+                  <linearGradient id="colorUv">
+                    <stop offset="0%" stopColor="rgba(70, 125, 51, 0.5)" />
+                    <stop offset="100%" stopColor="rgba(154, 255, 119, 0.06)" />
+                  </linearGradient>
+                  <linearGradient id="colorPv">
+                    <stop offset="0%" stopColor="rgba(109, 85, 255, 0.76)" />
+                    <stop offset="80.73%" stopColor="rgba(158, 142, 255, 0.06)" />
+                  </linearGradient>
+                </defs>
+                <Tooltip />
+                <Area type="linear" dataKey="uv" stackId="1" stroke="#F2A627" strokeWidth={4} fill="url(#colorUv)" />
+                <Area type="linear" dataKey="pv" stackId="1" stroke="#9E8EFF" strokeWidth={4} fill="url(#colorPv)" />
+              </AreaChart>
+            </ResponsiveContainer>
+          </Box>
+          <Box mt={2} display="flex" justifyContent="space-between">
             <Box display="flex" style={{ gap: '16px' }}>
               <Box display="flex" alignItems="center" className={classes.cardSubheading2}>
                 <FiberManualRecord style={{ fontSize: '8px' }} />
@@ -236,8 +220,11 @@ const EarningsGraphCard = observer(() => {
                 <Box ml={1}>BADGER/WBTC</Box>
               </Box>
             </Box>
-            <Box className={classes.cardSubheading2} color="text.secondary">
-              Data as of :29 May, 2021 11:39 PM
+            <Box display="flex" alignItems="center">
+              <Cached className={classes.refreshIcon} />
+              <Box className={classes.cardSubheading2} color="text.secondary">
+                Data as of :29 May, 2021 11:39 PM
+              </Box>
             </Box>
           </Box>
         </Box>

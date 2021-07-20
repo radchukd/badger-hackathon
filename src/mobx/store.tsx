@@ -19,6 +19,8 @@ export class RootStore {
 
     extendObservable(this, {
       account: this.account,
+      prices: this.prices,
+      vaults: this.vaults,
     });
 
     this.loadAccount();

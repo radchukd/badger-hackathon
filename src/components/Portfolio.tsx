@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react-lite';
 import React, { useContext } from 'react';
 
-import { Box, CircularProgress, Grid, makeStyles } from '@material-ui/core';
+import { Box, Button, CircularProgress, Grid, makeStyles } from '@material-ui/core';
 
 import { StoreContext } from '../';
 import { formatNumber } from '../utils/numberUtils';
@@ -60,7 +60,21 @@ const Portfolio = observer(() => {
               <BoostCard />
             </Grid>
             <Grid item xs={12}>
-              <EarningsGraphCard />
+              <Box mt={5}>
+                <Box mb={2} display="flex" alignItems="center" justifyContent="flex-start">
+                  <Box mr={2}>
+                    <Button variant="contained" color="primary">
+                      My Dashboard
+                    </Button>
+                  </Box>
+                  <Box>
+                    <Button variant="contained" color="primary">
+                      My Badger Boost
+                    </Button>
+                  </Box>
+                </Box>
+                <EarningsGraphCard />
+              </Box>
             </Grid>
             <Grid item xs={12} sm={6}>
               <AllocationCard title="Asset Allocation" subtitle="Subtext" data={allocationDistribution('balance')} />

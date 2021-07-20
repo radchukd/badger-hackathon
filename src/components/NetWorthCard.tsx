@@ -60,7 +60,7 @@ const NetWorthCard = observer(() => {
   const isMobile = useMediaQuery('(max-width: 767px)');
   const store = useContext(StoreContext);
   const { account, roiPercentage, earnedBadger } = store;
-  console.log(isMobile);
+
   return (
     <Card className={classes.cardRoot}>
       <CardContent className={classes.content}>
@@ -77,7 +77,7 @@ const NetWorthCard = observer(() => {
           <ResponsiveContainer width="100%" height={75}>
             <AreaChart height={75} data={data}>
               <defs>
-                <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                <linearGradient id="colorUv">
                   <stop offset="0%" stopColor="rgba(70, 125, 51, 0.5)" />
                   <stop offset="100%" stopColor="rgba(154, 255, 119, 0.06)" />
                 </linearGradient>
