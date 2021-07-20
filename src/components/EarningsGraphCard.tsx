@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { observer } from 'mobx-react-lite';
 import React, { useContext } from 'react';
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
@@ -20,8 +21,8 @@ import {
 } from '@material-ui/core';
 import { ArrowDropDown, Close, FiberManualRecord } from '@material-ui/icons';
 
+import { StoreContext } from '../';
 import useCardStyles from '../styles/cardStyles';
-import { StoreContext } from '..';
 
 const useStyles = makeStyles((theme) => ({
   dropdownContainer: {
@@ -38,8 +39,6 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 0,
   },
   vaultName: {
-    fontSize: '16px',
-    lineHeight: '24px',
     color: theme.palette.primary.light,
   },
 }));
@@ -109,7 +108,7 @@ const EarningsGraphCard = observer(() => {
             <Typography variant="h6">
               <Box fontWeight="fontWeightRegular">Earnings from Sett vaults</Box>
             </Typography>
-            <Box className={classes.earningsSubheading} color="text.secondary">
+            <Box className={classes.cardSubheading2} color="text.secondary">
               Compounding and $BADGER rewards
             </Box>
             <Box mt={2}>
@@ -156,7 +155,10 @@ const EarningsGraphCard = observer(() => {
                           <Box mr={1}>
                             <img src={`/assets/${asset}`} width="24" height="24" />
                           </Box>
-                          <ListItemText primary={asset} primaryTypographyProps={{ className: classes.vaultName }} />
+                          <ListItemText
+                            primary={asset}
+                            primaryTypographyProps={{ className: clsx(classes.vaultName, classes.cardSubheading4) }}
+                          />
                         </ListItem>
                       ))}
                     </Box>
@@ -169,7 +171,12 @@ const EarningsGraphCard = observer(() => {
                             <Box mr={1}>
                               <img src={`/assets/${asset}`} width="24" height="24" />
                             </Box>
-                            <ListItemText primary={asset} primaryTypographyProps={{ className: classes.vaultName }} />
+                            <ListItemText
+                              primary={asset}
+                              primaryTypographyProps={{
+                                className: clsx(classes.vaultName, classes.cardSubheading4),
+                              }}
+                            />
                           </ListItem>
                         ),
                       )}
@@ -185,7 +192,7 @@ const EarningsGraphCard = observer(() => {
                 $1,434.66
               </Box>
             </Typography>
-            <Box className={classes.earningsSubheading}>271.14 $BADGER</Box>
+            <Box className={classes.cardSubheading2}>271.14 $BADGER</Box>
             <Box mt={2}>
               <ButtonGroup>
                 {graphPeriods.map((value, index) => (
@@ -220,16 +227,16 @@ const EarningsGraphCard = observer(() => {
           </ResponsiveContainer>
           <Box display="flex" justifyContent="space-between">
             <Box display="flex" style={{ gap: '16px' }}>
-              <Box display="flex" alignItems="center" className={classes.earningsSubheading}>
+              <Box display="flex" alignItems="center" className={classes.cardSubheading2}>
                 <FiberManualRecord style={{ fontSize: '8px' }} />
                 <Box ml={1}>crvRenWBTC</Box>
               </Box>
-              <Box display="flex" alignItems="center" className={classes.earningsSubheading}>
+              <Box display="flex" alignItems="center" className={classes.cardSubheading2}>
                 <FiberManualRecord style={{ fontSize: '8px' }} />
                 <Box ml={1}>BADGER/WBTC</Box>
               </Box>
             </Box>
-            <Box className={classes.earningsSubheading} color="text.secondary">
+            <Box className={classes.cardSubheading2} color="text.secondary">
               Data as of :29 May, 2021 11:39 PM
             </Box>
           </Box>

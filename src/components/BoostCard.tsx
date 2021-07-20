@@ -4,8 +4,8 @@ import React, { useContext } from 'react';
 
 import { Card, CardContent, makeStyles, Typography } from '@material-ui/core';
 
+import { StoreContext } from '../';
 import useCardStyles from '../styles/cardStyles';
-import { StoreContext } from '..';
 import { formatNumber } from '../utils/numberUtils';
 
 const useStyles = makeStyles((theme) => ({
@@ -24,8 +24,8 @@ const BoostCard = observer(() => {
   return (
     <Card className={classes.cardRoot}>
       <CardContent className={clsx(classes.content, classes.centeredContent)}>
-        <Typography className={classes.heading}>{formatNumber(account?.boost, 'decimal')}</Typography>
-        <Typography className={classes.boostSubheading}>My Boost</Typography>
+        <Typography className={classes.cardHeading1}>{formatNumber(account?.boost, 'decimal')}</Typography>
+        <Typography className={classes.cardSubheading1}>My Boost</Typography>
         <Typography className={classes.rank}>Rank No. {account?.boostRank}</Typography>
       </CardContent>
     </Card>

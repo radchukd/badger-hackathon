@@ -59,16 +59,22 @@ export class RootStore {
   loadPrices = action(async (): Promise<void> => {
     const res = await fetch(`${this.baseUrl}/prices`);
     if (res.ok) {
-      this.prices = await res.json();
+      this.prices = (await res.json()) || [];
     }
   });
 
   loadVaults = action(async (): Promise<void> => {
     const res = await fetch(`${this.baseUrl}/setts`);
     if (res.ok) {
-      this.vaults = await res.json();
+      this.vaults = (await res.json()) || [];
     }
   });
+
+  get isLoading(): boolean {
+    return (
+      typeof this.account === 'undefined' || typeof this.prices === 'undefined' || typeof this.vaults === 'undefined'
+    );
+  }
 
   get roiPercentage(): number {
     if (!this.account?.value || !this.account?.earnedValue) return 0;

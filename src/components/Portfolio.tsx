@@ -4,13 +4,13 @@ import React, { useContext } from 'react';
 import { Box, CircularProgress, Grid, makeStyles } from '@material-ui/core';
 
 import { StoreContext } from '../';
-import NetWorthCard from './NetWorthCard';
-import PendingCard from './PendingCard';
-import BoostCard from './BoostCard';
-import EarningsGraphCard from './EarningsGraphCard';
+import { formatNumber } from '../utils/numberUtils';
 import AllocationCard from './AllocationCard';
 import BalanceTableCard from './BalanceTableCard';
-import { formatNumber } from '../utils/numberUtils';
+import BoostCard from './BoostCard';
+import EarningsGraphCard from './EarningsGraphCard';
+import NetWorthCard from './NetWorthCard';
+import PendingCard from './PendingCard';
 
 const useStyles = makeStyles((theme) => ({
   rootContainer: {
@@ -32,6 +32,7 @@ const Portfolio = observer(() => {
   const store = useContext(StoreContext);
   const {
     account,
+    isLoading,
     assetValue,
     assetValueBTC,
     allocationDistribution,
@@ -42,7 +43,7 @@ const Portfolio = observer(() => {
 
   return (
     <Box className={classes.rootContainer}>
-      {!account ? (
+      {isLoading ? (
         <Box display="flex" alignItems="center" justifyContent="center" height="100vh">
           <CircularProgress color="secondary" />
         </Box>
@@ -125,10 +126,10 @@ const Portfolio = observer(() => {
                       align: 'center',
                     },
                     {
-                      value: `${formatNumber(strategyROI(balance.asset), 'decimal')}%`,
+                      value: formatNumber(strategyROI(balance.asset) / 100, 'percent'),
                       color: 'info.main',
                       align: 'center',
-                    }, // TODO: compute
+                    },
                     [
                       { value: formatNumber(balance.earnedBalance, 'decimal'), align: 'right' },
                       { value: formatNumber(balance.earnedValue, 'currency'), align: 'right' },

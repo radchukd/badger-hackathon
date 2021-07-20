@@ -1,5 +1,6 @@
 import { observer } from 'mobx-react-lite';
 import React from 'react';
+import { Cell, Pie, PieChart, Tooltip } from 'recharts';
 
 import {
   Box,
@@ -11,17 +12,13 @@ import {
   ListItemText,
   makeStyles,
   Typography,
+  useMediaQuery,
 } from '@material-ui/core';
-import { PieChart, Pie, Cell, Tooltip } from 'recharts';
+
 import useCardStyles from '../styles/cardStyles';
-import { useMediaQuery } from '@material-ui/core';
 import { formatNumber } from '../utils/numberUtils';
 
 const useStyles = makeStyles((/* theme */) => ({
-  allocationHeading: {
-    fontSize: '16px',
-    lineHeight: '24px',
-  },
   otherAvatar: {
     width: '40px',
     height: '40px',
@@ -45,8 +42,8 @@ const AllocationCard = observer(({ title, subtitle, data }: IAllocationCard) => 
   return (
     <Card className={classes.cardRoot}>
       <CardContent className={classes.content}>
-        <Typography className={classes.allocationHeading}>{title}</Typography>
-        <Typography className={classes.earningsSubheading} color="textSecondary">
+        <Typography className={classes.cardSubheading4}>{title}</Typography>
+        <Typography className={classes.cardSubheading2} color="textSecondary">
           {subtitle}
         </Typography>
         <Box display="flex" flexDirection={isTabletOrSmaller ? 'column' : 'row'} alignItems="center">
@@ -77,9 +74,9 @@ const AllocationCard = observer(({ title, subtitle, data }: IAllocationCard) => 
                   </ListItemAvatar>
                   <ListItemText
                     primary={entry.name}
-                    primaryTypographyProps={{ className: classes.allocationHeading }}
+                    primaryTypographyProps={{ className: classes.cardSubheading4 }}
                     secondary={formatNumber(entry?.value, 'percent')}
-                    secondaryTypographyProps={{ className: classes.earningsSubheading }}
+                    secondaryTypographyProps={{ className: classes.cardSubheading2 }}
                   />
                 </ListItem>
               ))}

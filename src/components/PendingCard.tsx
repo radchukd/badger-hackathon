@@ -4,8 +4,8 @@ import React, { useContext } from 'react';
 
 import { Button, Card, CardContent, makeStyles, Typography } from '@material-ui/core';
 
+import { StoreContext } from '../';
 import useCardStyles from '../styles/cardStyles';
-import { StoreContext } from '..';
 import { formatNumber } from '../utils/numberUtils';
 
 const useStyles = makeStyles((theme) => ({
@@ -24,8 +24,8 @@ const PendingCard = observer(() => {
   return (
     <Card className={classes.cardRoot}>
       <CardContent className={clsx(classes.content, classes.centeredContent)}>
-        <Typography className={classes.heading}>{formatNumber(totalClaimable, 'currency')}</Typography>
-        <Typography className={classes.boostSubheading}>Pending</Typography>
+        <Typography className={classes.cardHeading1}>{formatNumber(totalClaimable, 'currency')}</Typography>
+        <Typography className={classes.cardSubheading1}>Pending</Typography>
         <Button variant="contained" color="primary" className={classes.claimButton} disabled={!canClaim}>
           Claim all pending {canClaim ? `(${account?.claimableBalances.length})` : ''}
         </Button>

@@ -4,8 +4,8 @@ import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis } from 'recharts';
 
 import { Box, Card, CardContent, Divider, makeStyles, Typography, useMediaQuery } from '@material-ui/core';
 
+import { StoreContext } from '../';
 import useCardStyles from '../styles/cardStyles';
-import { StoreContext } from '..';
 import { formatNumber } from '../utils/numberUtils';
 
 const useStyles = makeStyles((theme) => ({
@@ -16,10 +16,6 @@ const useStyles = makeStyles((theme) => ({
   },
   roiline: {
     gap: theme.spacing(5),
-  },
-  roiHeading: {
-    fontSize: '16px',
-    lineHeight: '21px',
   },
   roiSubheading: {
     fontSize: '13px',
@@ -95,17 +91,17 @@ const NetWorthCard = observer(() => {
         <Divider className={classes.divider} />
         <Box display="flex" className={classes.roiline}>
           <Box>
-            <Box className={classes.roiHeading} color={roiPercentage >= 0 ? 'info.main' : 'warning.main'}>
+            <Box className={classes.cardSubheading3} color={roiPercentage >= 0 ? 'info.main' : 'warning.main'}>
               {formatNumber(roiPercentage, 'percent', 3)}
             </Box>
             <Box className={classes.roiSubheading}>ROI in %</Box>
           </Box>
           <Box>
-            <Box className={classes.roiHeading}>{formatNumber(account?.earnedValue, 'currency')}</Box>
+            <Box className={classes.cardSubheading3}>{formatNumber(account?.earnedValue, 'currency')}</Box>
             <Box className={classes.roiSubheading}>ROI in $ value</Box>
           </Box>
           <Box>
-            <Box className={classes.roiHeading}>{formatNumber(earnedBadger, 'decimal')}</Box>
+            <Box className={classes.cardSubheading3}>{formatNumber(earnedBadger, 'decimal')}</Box>
             <Box className={classes.roiSubheading}>Earned $Badger</Box>
           </Box>
         </Box>

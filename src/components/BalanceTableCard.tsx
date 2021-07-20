@@ -1,6 +1,7 @@
+import clsx from 'clsx';
 import { observer } from 'mobx-react-lite';
 import React from 'react';
-import clsx from 'clsx';
+
 import {
   Box,
   Card,
@@ -24,10 +25,6 @@ const useStyles = makeStyles((theme) => ({
   headline: {
     backgroundColor: theme.palette.secondary.dark,
     padding: theme.spacing(2),
-  },
-  balanceSubheading: {
-    fontSize: '16px',
-    lineHeight: '21px',
   },
   balanceTable: {
     minWidth: '600px',
@@ -99,7 +96,7 @@ const BalanceTableCard = observer(
               <Typography variant="h6">
                 <Box fontWeight="fontWeightRegular">{title}</Box>
               </Typography>
-              <Box className={classes.balanceSubheading} color="text.secondary">
+              <Box className={classes.cardSubheading3} color="text.secondary">
                 {subtitle1}
               </Box>
             </Box>
@@ -107,7 +104,7 @@ const BalanceTableCard = observer(
               <Typography variant="h6">
                 <Box color={title2.startsWith('-') ? 'warning.main' : 'info.main'}>{title2}</Box>
               </Typography>
-              <Box className={classes.balanceSubheading} color="text.secondary">
+              <Box className={classes.cardSubheading3} color="text.secondary">
                 {subtitle2}
               </Box>
             </Box>
@@ -133,19 +130,17 @@ const BalanceTableCard = observer(
                         </TableCell>
                       ) : (
                         <TableCell key={index}>
-                          <Box display="flex" flexDirection="column">
-                            <Typography
-                              className={classes.cellHeading}
-                              align={(cell as [ICell, ICell])[0]?.align ?? 'center'}
-                            >
-                              <Box color={(cell as [ICell, ICell])[0].color}>{(cell as [ICell, ICell])[0].value}</Box>
-                            </Typography>
-                            <Typography
-                              className={classes.cellSubheading}
-                              align={(cell as [ICell, ICell])[1]?.align ?? 'center'}
-                            >
-                              <Box color={(cell as [ICell, ICell])[1].color}>{(cell as [ICell, ICell])[1].value}</Box>
-                            </Typography>
+                          <Box
+                            display="flex"
+                            flexDirection="column"
+                            textAlign={(cell as [ICell, ICell])[0]?.align ?? 'center'}
+                          >
+                            <Box className={classes.cellHeading} color={(cell as [ICell, ICell])[0].color}>
+                              {(cell as [ICell, ICell])[0].value}
+                            </Box>
+                            <Box className={classes.cellSubheading} color={(cell as [ICell, ICell])[1].color}>
+                              {(cell as [ICell, ICell])[1].value}
+                            </Box>
                           </Box>
                         </TableCell>
                       ),

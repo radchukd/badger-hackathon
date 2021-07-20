@@ -11,18 +11,27 @@ export default makeStyles((theme) => ({
   },
   centeredContent: {
     alignItems: 'center',
+    justifyContent: 'center',
   },
-  heading: {
+  cardHeading1: {
     fontSize: '24px',
     lineHeight: '40px',
   },
-  boostSubheading: {
+  cardSubheading1: {
     fontSize: '13px',
     lineHeight: '28px',
     color: theme.palette.text.secondary,
   },
-  earningsSubheading: {
+  cardSubheading2: {
     fontSize: '13px',
     lineHeight: '21px',
+  },
+  cardSubheading3: {
+    fontSize: '16px',
+    lineHeight: '21px',
+  },
+  cardSubheading4: {
+    fontSize: '16px',
+    lineHeight: '24px',
   },
 }));
