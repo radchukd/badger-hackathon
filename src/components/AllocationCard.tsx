@@ -39,6 +39,12 @@ const AllocationCard = observer(({ title, subtitle, data }: IAllocationCard) => 
 
   const COLORS = ['#E8C6A7', '#6F80BB', '#304DB3', '#52B330', '#000000'];
 
+  const getAssetIcon = (name: string): JSX.Element => {
+    if (name === 'Other') return <Box className={classes.otherAvatar} />;
+
+    return <img src={`/assets/${name}.png`} width="40" height="40" />;
+  };
+
   return (
     <Card className={classes.cardRoot}>
       <CardContent className={classes.content}>
@@ -65,13 +71,7 @@ const AllocationCard = observer(({ title, subtitle, data }: IAllocationCard) => 
             <List>
               {data.map((entry) => (
                 <ListItem key={entry.name}>
-                  <ListItemAvatar>
-                    {entry.name === 'Other' ? (
-                      <Box className={classes.otherAvatar} />
-                    ) : (
-                      <img src={`/assets/${entry.name}.png`} width="40" height="40" />
-                    )}
-                  </ListItemAvatar>
+                  <ListItemAvatar>{getAssetIcon(entry.name)}</ListItemAvatar>
                   <ListItemText
                     primary={entry.name}
                     primaryTypographyProps={{ className: classes.cardSubheading4 }}

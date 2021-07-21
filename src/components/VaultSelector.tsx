@@ -39,8 +39,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+type Vault = { icon: string; value: string; labels: Array<string> };
+
 interface IVaultSelector {
-  vaults: Array<Array<{ icon: string; value: string; labels: Array<string> }>>;
+  vaults: Array<Array<Vault>>;
   onClose: () => void;
   onAllClick: () => void;
   isAllChecked: boolean;
@@ -57,6 +59,12 @@ const VaultSelector: React.FC<IVaultSelector> = ({
   isItemChecked,
 }) => {
   const classes = { ...useStyles(), ...useCardStyles() };
+
+  const getVaultIcon = (vault: Vault): JSX.Element => {
+    if (isItemChecked(vault.value)) return <Check />;
+
+    return <img src={`/assets/${vault.icon}`} width="24" height="24" />;
+  };
 
   return (
     <Box className={classes.dropdownContainer}>
@@ -84,13 +92,7 @@ const VaultSelector: React.FC<IVaultSelector> = ({
                   selected={isItemChecked(vault.value)}
                   classes={{ selected: classes.selectedVaultItem }}
                 >
-                  <Box mr={1}>
-                    {isItemChecked(vault.value) ? (
-                      <Check />
-                    ) : (
-                      <img src={`/assets/${vault.icon}`} width="24" height="24" />
-                    )}
-                  </Box>
+                  <Box mr={1}>{getVaultIcon(vault)}</Box>
                   <Box className={classes.vaultName}>{vault.value}</Box>
                   {vault.labels.map((label, labelIndex) => (
                     <Chip key={labelIndex} size="small" label={label} className={classes.vaultChip} />
