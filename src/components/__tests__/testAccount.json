@@ -1,0 +1,604 @@
+{
+  "id": "0x4e65175f05b4140a0747c29cce997cd4bb7190d4",
+  "boost": 2.65311657763103,
+  "boostRank": 742,
+  "multipliers": {
+    "0x8c76970747afd5398e958bDfadA4cf0B9FcA16c4": 1.1673092683656283,
+    "0x55912D0Cf83B75c492E761932ABc4DB4a5CB1b17": 1.2285586945448959,
+    "0xBE08Ef12e4a553666291E9fFC24fCCFd354F2Dd2": 1.1879825776468604,
+    "0x2B5455aac8d64C14786c3a29858E43b5945819C0": 1.4679810326064524,
+    "0x53C8E199eb2Cb7c01543C137078a038937a68E40": 1.2564323663339736,
+    "0x6dEf55d2e18486B9dDfaA075bc4e4EE0B28c1545": 1.5982518773939058,
+    "0xd04c48A53c111300aD41190D63681ed3dAd998eC": 1.40990800960958,
+    "0xb9D076fDe463dbc9f915E5392F807315Bf940334": 1.3208571510535507,
+    "0xAf5A1DECfa95BAF63E0084a35c62592B774A2A87": 1.5627639955183976,
+    "0x758A43EE2BFf8230eeb784879CdcFF4828F2544D": 1.3409333827372192,
+    "0x4b92d19c11435614CD49Af1b589001b7c08cD4D5": 1.8372259145669663,
+    "0x8a8FFec8f4A0C8c9585Da95D9D97e8Cd6de273DE": 1.176379700567025,
+    "0xf349c0faA80fC1870306Ac093f75934078e28991": 1.2881135085783537,
+    "0x5Dce29e92b1b939F8E8C60DcF15BDE82A85be4a9": 1.2567983671716494
+  },
+  "value": 485982.69134886784,
+  "earnedValue": -4378.722701898945,
+  "balances": [
+    {
+      "id": "0x19D97D8fA813EE2f51aD4B4e04EA08bAf4DFfC28",
+      "name": "Badger",
+      "asset": "BADGER",
+      "ppfs": 1.2311525365424363,
+      "balance": 1200.1584252326961,
+      "value": 9049.194526254529,
+      "tokens": [
+        {
+          "address": "0x3472A5A71965499acd81997a54BBA8D852C6E53d",
+          "name": "Badger",
+          "symbol": "BADGER",
+          "decimals": 18,
+          "balance": 1200.1584252326961,
+          "value": 9049.194526254529
+        }
+      ],
+      "earnedBalance": 17.93309669937298,
+      "earnedValue": 135.2155491132723,
+      "earnedTokens": [
+        {
+          "address": "0x3472A5A71965499acd81997a54BBA8D852C6E53d",
+          "name": "Badger",
+          "symbol": "BADGER",
+          "decimals": 18,
+          "balance": 17.93309669937298,
+          "value": 135.2155491132723
+        }
+      ],
+      "depositedBalance": 1590.400428846141,
+      "withdrawnBalance": 408.1751003128179
+    },
+    {
+      "id": "0x2B5455aac8d64C14786c3a29858E43b5945819C0",
+      "name": "Convex cvxCRV Helper",
+      "asset": "cvxCRV",
+      "ppfs": 1.0312372829331826,
+      "balance": 421.35879199090516,
+      "value": 551.9800175080858,
+      "tokens": [
+        {
+          "address": "0x62B9c7356A2Dc64a1969e19C23e4f579F9810Aa7",
+          "name": "Convex CRV",
+          "symbol": "cvxCRV",
+          "decimals": 18,
+          "balance": 421.35879199090516,
+          "value": 551.9800175080858
+        }
+      ],
+      "earnedBalance": 4.869732294272069,
+      "earnedValue": 6.379349305496411,
+      "earnedTokens": [
+        {
+          "address": "0x62B9c7356A2Dc64a1969e19C23e4f579F9810Aa7",
+          "name": "Convex CRV",
+          "symbol": "cvxCRV",
+          "decimals": 18,
+          "balance": 4.869732294272069,
+          "value": 6.379349305496411
+        }
+      ],
+      "depositedBalance": 416.4890596966331,
+      "withdrawnBalance": 0
+    },
+    {
+      "id": "0x4b92d19c11435614CD49Af1b589001b7c08cD4D5",
+      "name": "Yearn Wrapped BTC",
+      "asset": "WBTC",
+      "ppfs": 1.0088316999981548,
+      "balance": 0.5548574349989852,
+      "value": 17441.38861179,
+      "tokens": [
+        {
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": 0.5548574349989852,
+          "value": 17438.05946714811
+        }
+      ],
+      "earnedBalance": -0.01556923500101437,
+      "earnedValue": -489.3099176118796,
+      "earnedTokens": [
+        {
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": -0.01556923500101437,
+          "value": -489.3099176118796
+        }
+      ],
+      "depositedBalance": 5,
+      "withdrawnBalance": 4.42957333
+    },
+    {
+      "id": "0x53C8E199eb2Cb7c01543C137078a038937a68E40",
+      "name": "Convex CVX Helper",
+      "asset": "CVX",
+      "ppfs": 1.0334361121918554,
+      "balance": 189.52097189643248,
+      "value": 422.6317673290444,
+      "tokens": [
+        {
+          "address": "0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B",
+          "name": "Convex Token",
+          "symbol": "CVX",
+          "decimals": 18,
+          "balance": 189.52097189643248,
+          "value": 424.5269770480088
+        }
+      ],
+      "earnedBalance": 2.1164009391220873,
+      "earnedValue": 4.740738103633476,
+      "earnedTokens": [
+        {
+          "address": "0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B",
+          "name": "Convex Token",
+          "symbol": "CVX",
+          "decimals": 18,
+          "balance": 2.1164009391220873,
+          "value": 4.740738103633476
+        }
+      ],
+      "depositedBalance": 187.4045709573104,
+      "withdrawnBalance": 0
+    },
+    {
+      "id": "0x55912D0Cf83B75c492E761932ABc4DB4a5CB1b17",
+      "name": "Convex pBTC",
+      "asset": "crvpBTC",
+      "ppfs": 1.0007144018207734,
+      "balance": 1.9885702039335948,
+      "value": 63610.74310489616,
+      "tokens": [
+        {
+          "value": 4663612.546825258,
+          "address": "0x5228a22e72ccC52d415EcFd199F99D0665E7733b",
+          "name": "pTokens BTC",
+          "symbol": "PBTC",
+          "decimals": 18,
+          "balance": 147.1263974643592
+        },
+        {
+          "value": 3590217.2301260713,
+          "address": "0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3",
+          "name": "Curve.fi renBTC/wBTC/sBTC",
+          "symbol": "crvsBTC",
+          "decimals": 18,
+          "balance": 112.27836070111631
+        }
+      ],
+      "earnedBalance": 0.0014196239924608722,
+      "earnedValue": 45.410942026835706,
+      "earnedTokens": [
+        {
+          "value": 4663612.546825258,
+          "address": "0x5228a22e72ccC52d415EcFd199F99D0665E7733b",
+          "name": "pTokens BTC",
+          "symbol": "PBTC",
+          "decimals": 18,
+          "balance": 147.1263974643592
+        },
+        {
+          "value": 3590217.2301260713,
+          "address": "0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3",
+          "name": "Curve.fi renBTC/wBTC/sBTC",
+          "symbol": "crvsBTC",
+          "decimals": 18,
+          "balance": 112.27836070111631
+        }
+      ],
+      "depositedBalance": 1.987150579941134,
+      "withdrawnBalance": 0
+    },
+    {
+      "id": "0x758A43EE2BFf8230eeb784879CdcFF4828F2544D",
+      "name": "Sushiswap Wrapped BTC/Wrapped Ether",
+      "asset": "SLP-WBTC-ETH",
+      "ppfs": 1,
+      "balance": 0,
+      "value": 0,
+      "tokens": [
+        {
+          "value": 13478695.25127464,
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": 428.87537391099147
+        },
+        {
+          "value": 13473403.374520853,
+          "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "name": "Wrapped Ethereum",
+          "symbol": "WETH",
+          "decimals": 18,
+          "balance": 7170.289067151051
+        }
+      ],
+      "earnedBalance": 0,
+      "earnedValue": 0,
+      "earnedTokens": [
+        {
+          "value": 13478695.25127464,
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": 428.87537391099147
+        },
+        {
+          "value": 13473403.374520853,
+          "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "name": "Wrapped Ethereum",
+          "symbol": "WETH",
+          "decimals": 18,
+          "balance": 7170.289067151051
+        }
+      ],
+      "depositedBalance": 0.000014084125495012,
+      "withdrawnBalance": 0.000014084125495012
+    },
+    {
+      "id": "0x7e7E112A68d8D2E221E11047a72fFC1065c38e1a",
+      "name": "Digg",
+      "asset": "DIGG",
+      "ppfs": 0.15641200700321048,
+      "balance": 0.04326346494276524,
+      "value": 1416.6361200256695,
+      "tokens": [
+        {
+          "address": "0x798D1bE841a82a273720CE31c822C61a67a601C3",
+          "name": "Digg",
+          "symbol": "DIGG",
+          "decimals": 9,
+          "balance": 0.04326346494276524,
+          "value": 1416.3657180176479
+        }
+      ],
+      "earnedBalance": -0.2221472502072579,
+      "earnedValue": -7272.689553684604,
+      "earnedTokens": [
+        {
+          "address": "0x798D1bE841a82a273720CE31c822C61a67a601C3",
+          "name": "Digg",
+          "symbol": "DIGG",
+          "decimals": 9,
+          "balance": -0.2221472502072579,
+          "value": -7272.689553684604
+        }
+      ],
+      "depositedBalance": 1.5555055842013201,
+      "withdrawnBalance": 1.290094869051297
+    },
+    {
+      "id": "0x88128580ACdD9c04Ce47AFcE196875747bF2A9f6",
+      "name": "Sushiswap Wrapped BTC/Digg",
+      "asset": "SLP-DIGG-WBTC",
+      "ppfs": 1.5632994910072904,
+      "balance": 0,
+      "value": 0,
+      "tokens": [
+        {
+          "value": 1811936.287829372,
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": 57.65356649577995
+        },
+        {
+          "value": 1811936.287829372,
+          "address": "0x798D1bE841a82a273720CE31c822C61a67a601C3",
+          "name": "Digg",
+          "symbol": "DIGG",
+          "decimals": 9,
+          "balance": 55.3463283316022
+        }
+      ],
+      "earnedBalance": 1.3083194000000042e-11,
+      "earnedValue": 857.4649648074144,
+      "earnedTokens": [
+        {
+          "value": 1811936.287829372,
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": 57.65356649577995
+        },
+        {
+          "value": 1811936.287829372,
+          "address": "0x798D1bE841a82a273720CE31c822C61a67a601C3",
+          "name": "Digg",
+          "symbol": "DIGG",
+          "decimals": 9,
+          "balance": 55.3463283316022
+        }
+      ],
+      "depositedBalance": 2.62927657e-10,
+      "withdrawnBalance": 2.76010851e-10
+    },
+    {
+      "id": "0x8a8FFec8f4A0C8c9585Da95D9D97e8Cd6de273DE",
+      "name": "Sushiswap Wrapped BTC/ibBTC",
+      "asset": "SLP-IBBTC-WBTC",
+      "ppfs": 1,
+      "balance": 0,
+      "value": 0,
+      "tokens": [
+        {
+          "value": 15259599.096412407,
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": 485.5415265499684
+        },
+        {
+          "value": 15353986.898135278,
+          "address": "0xc4E15973E6fF2A35cC804c2CF9D2a1b817a8b40F",
+          "name": "ibBTC",
+          "symbol": "ibBTC",
+          "decimals": 18,
+          "balance": 486.8410037488634
+        }
+      ],
+      "earnedBalance": 0,
+      "earnedValue": 0,
+      "earnedTokens": [
+        {
+          "value": 15259599.096412407,
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": 485.5415265499684
+        },
+        {
+          "value": 15353986.898135278,
+          "address": "0xc4E15973E6fF2A35cC804c2CF9D2a1b817a8b40F",
+          "name": "ibBTC",
+          "symbol": "ibBTC",
+          "decimals": 18,
+          "balance": 486.8410037488634
+        }
+      ],
+      "depositedBalance": 0.000025507687776729,
+      "withdrawnBalance": 0.000025507687776729
+    },
+    {
+      "id": "0x8c76970747afd5398e958bDfadA4cf0B9FcA16c4",
+      "name": "Convex hBTC",
+      "asset": "crvhBTC",
+      "ppfs": 1.000408358974809,
+      "balance": 1.9870824425202258,
+      "value": 63348.20564007145,
+      "tokens": [
+        {
+          "value": 5480967.782654195,
+          "address": "0x0316EB71485b0Ab14103307bf65a021042c6d380",
+          "name": "Huobi BTC",
+          "symbol": "HBTC",
+          "decimals": 18,
+          "balance": 174.2312856079279
+        },
+        {
+          "value": 5066153.370507402,
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": 161.19871994741638
+        }
+      ],
+      "earnedBalance": 0.0008111117243361221,
+      "earnedValue": 25.855877826929685,
+      "earnedTokens": [
+        {
+          "value": 5480967.782654195,
+          "address": "0x0316EB71485b0Ab14103307bf65a021042c6d380",
+          "name": "Huobi BTC",
+          "symbol": "HBTC",
+          "decimals": 18,
+          "balance": 174.2312856079279
+        },
+        {
+          "value": 5066153.370507402,
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": 161.19871994741638
+        }
+      ],
+      "depositedBalance": 1.9862713307958897,
+      "withdrawnBalance": 0
+    },
+    {
+      "id": "0xb9D076fDe463dbc9f915E5392F807315Bf940334",
+      "name": "Convex tBTC/sBTC",
+      "asset": "crvtBTC",
+      "ppfs": 1.0237557971877802,
+      "balance": 0,
+      "value": 0,
+      "tokens": [
+        {
+          "value": 10971471.69046493,
+          "address": "0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa",
+          "name": "Keep Network BTC",
+          "symbol": "TBTC",
+          "decimals": 18,
+          "balance": 350.0676969613264
+        },
+        {
+          "value": 26303781.733047023,
+          "address": "0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3",
+          "name": "Curve.fi renBTC/wBTC/sBTC",
+          "symbol": "crvsBTC",
+          "decimals": 18,
+          "balance": 822.2967899249849
+        }
+      ],
+      "earnedBalance": 0.03089838540963452,
+      "earnedValue": 984.9626223436404,
+      "earnedTokens": [
+        {
+          "value": 10971471.69046493,
+          "address": "0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa",
+          "name": "Keep Network BTC",
+          "symbol": "TBTC",
+          "decimals": 18,
+          "balance": 350.0676969613264
+        },
+        {
+          "value": 26303781.733047023,
+          "address": "0x075b1bb99792c9E1041bA13afEf80C91a1e70fB3",
+          "name": "Curve.fi renBTC/wBTC/sBTC",
+          "symbol": "crvsBTC",
+          "decimals": 18,
+          "balance": 822.2967899249849
+        }
+      ],
+      "depositedBalance": 5.099518023250567,
+      "withdrawnBalance": 5.130416408660201
+    },
+    {
+      "id": "0xBE08Ef12e4a553666291E9fFC24fCCFd354F2Dd2",
+      "name": "Convex Tricrypto",
+      "asset": "crvTricrypto",
+      "ppfs": 1.0012550289541495,
+      "balance": 279.0636076834771,
+      "value": 330141.91156099294,
+      "tokens": [
+        {
+          "value": 4194959.311314335,
+          "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "name": "Tether",
+          "symbol": "USDT",
+          "decimals": 6,
+          "balance": 4194959.311314335
+        },
+        {
+          "value": 4304034.562710357,
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": 136.92290394828393
+        },
+        {
+          "value": 4372756.831263246,
+          "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "name": "Wrapped Ethereum",
+          "symbol": "WETH",
+          "decimals": 18,
+          "balance": 2327.0980337313586
+        }
+      ],
+      "earnedBalance": 0.21307107688909355,
+      "earnedValue": 252.0543740243248,
+      "earnedTokens": [
+        {
+          "value": 4194959.311314335,
+          "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "name": "Tether",
+          "symbol": "USDT",
+          "decimals": 6,
+          "balance": 4194959.311314335
+        },
+        {
+          "value": 4304034.562710357,
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": 136.92290394828393
+        },
+        {
+          "value": 4372756.831263246,
+          "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "name": "Wrapped Ethereum",
+          "symbol": "WETH",
+          "decimals": 18,
+          "balance": 2327.0980337313586
+        }
+      ],
+      "depositedBalance": 278.850536606588,
+      "withdrawnBalance": 0
+    },
+    {
+      "id": "0xd04c48A53c111300aD41190D63681ed3dAd998eC",
+      "name": "Convex renBTC/wBTC/sBTC",
+      "asset": "crvsBTC",
+      "ppfs": 1.0122507322281895,
+      "balance": 0,
+      "value": 0,
+      "tokens": [
+        {
+          "value": 12966698.482585931,
+          "address": "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D",
+          "name": "Ren Protocol BTC",
+          "symbol": "renBTC",
+          "decimals": 8,
+          "balance": 413.03110411498795
+        },
+        {
+          "value": 12774553.082083488,
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": 406.3928574818187
+        },
+        {
+          "value": 6787203.365903486,
+          "address": "0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6",
+          "name": "Synthetix Network BTC",
+          "symbol": "sBTC",
+          "decimals": 18,
+          "balance": 215.7613048257458
+        }
+      ],
+      "earnedBalance": 0.03349984514909643,
+      "earnedValue": 1071.1923518459912,
+      "earnedTokens": [
+        {
+          "value": 12966698.482585931,
+          "address": "0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D",
+          "name": "Ren Protocol BTC",
+          "symbol": "renBTC",
+          "decimals": 8,
+          "balance": 413.03110411498795
+        },
+        {
+          "value": 12774553.082083488,
+          "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "name": "Wrapped Bitcoin",
+          "symbol": "WBTC",
+          "decimals": 8,
+          "balance": 406.3928574818187
+        },
+        {
+          "value": 6787203.365903486,
+          "address": "0xfE18be6b3Bd88A2D2A7f928d00292E7a9963CfC6",
+          "name": "Synthetix Network BTC",
+          "symbol": "sBTC",
+          "decimals": 18,
+          "balance": 215.7613048257458
+        }
+      ],
+      "depositedBalance": 6.942910546913406,
+      "withdrawnBalance": 6.976410392062502
+    }
+  ],
+  "claimableBalances": [],
+  "nativeBalance": 10743.26504207098,
+  "nonNativeBalance": 459754.850359314
+}

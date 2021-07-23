@@ -4,8 +4,8 @@ import React from 'react';
 
 import { render, screen } from '@testing-library/react';
 
-import AllocationCard, { IAllocationCard } from '../AllocationCard';
 import { RootStore } from '../../mobx/store';
+import AllocationCard, { IAllocationCard } from '../AllocationCard';
 
 describe('AllocationCard', () => {
   const store = new RootStore({ preload: false });

@@ -4,8 +4,8 @@ import React from 'react';
 
 import { fireEvent, render, screen } from '@testing-library/react';
 
-import EarningsGraphCard from '../EarningsGraphCard';
 import store, { StoreProvider } from '../../mobx/store';
+import EarningsGraphCard from '../EarningsGraphCard';
 
 describe('EarningsGraphCard', () => {
   it('has week by default', () => {

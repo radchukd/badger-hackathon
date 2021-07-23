@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NetWorthCard renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardRoot-4 MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          class="MuiCardContent-root makeStyles-content-5"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-12"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-13"
+            >
+              <h4
+                class="MuiTypography-root MuiTypography-h4"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-14"
+                >
+                  $485,982.69
+                </div>
+              </h4>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextSecondary"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-15"
+                >
+                  Your net worth
+                </div>
+              </h6>
+            </div>
+            <div
+              class="recharts-responsive-container"
+              style="width: 100%; height: 75px;"
+            />
+          </div>
+          <hr
+            class="MuiDivider-root makeStyles-divider-1"
+          />
+          <div
+            class="MuiBox-root MuiBox-root-16 makeStyles-roiline-2"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-17"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-18 makeStyles-cardSubheading3-10"
+              >
+                -0.901%
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root-19 makeStyles-roiSubheading-3"
+              >
+                ROI in %
+              </div>
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root-20"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-21 makeStyles-cardSubheading3-10"
+              >
+                -$4,378.72
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root-22 makeStyles-roiSubheading-3"
+              >
+                ROI in $ value
+              </div>
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root-23"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-24 makeStyles-cardSubheading3-10"
+              >
+                0
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root-25 makeStyles-roiSubheading-3"
+              >
+                Earned $Badger
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-4 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root makeStyles-content-5"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-12"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-13"
+          >
+            <h4
+              class="MuiTypography-root MuiTypography-h4"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-14"
+              >
+                $485,982.69
+              </div>
+            </h4>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextSecondary"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-15"
+              >
+                Your net worth
+              </div>
+            </h6>
+          </div>
+          <div
+            class="recharts-responsive-container"
+            style="width: 100%; height: 75px;"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-1"
+        />
+        <div
+          class="MuiBox-root MuiBox-root-16 makeStyles-roiline-2"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-17"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-18 makeStyles-cardSubheading3-10"
+            >
+              -0.901%
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root-19 makeStyles-roiSubheading-3"
+            >
+              ROI in %
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root-20"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-21 makeStyles-cardSubheading3-10"
+            >
+              -$4,378.72
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root-22 makeStyles-roiSubheading-3"
+            >
+              ROI in $ value
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root-23"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-24 makeStyles-cardSubheading3-10"
+            >
+              0
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root-25 makeStyles-roiSubheading-3"
+            >
+              Earned $Badger
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

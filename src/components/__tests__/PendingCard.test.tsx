@@ -4,15 +4,22 @@ import React from 'react';
 
 import { render, screen } from '@testing-library/react';
 
-import PendingCard from '../PendingCard';
 import { RootStore, StoreProvider } from '../../mobx/store';
+import PendingCard from '../PendingCard';
+import testAccount from './testAccount.json';
 
 describe('PendingCard', () => {
   const store = new RootStore({ preload: false });
-  const { loadAccount } = store;
+  store.account = testAccount;
 
-  beforeAll(async () => {
-    await loadAccount();
+  it('renders correctly', () => {
+    const tree = render(
+      <StoreProvider value={store}>
+        <PendingCard />
+      </StoreProvider>,
+    );
+
+    expect(tree).toMatchSnapshot();
   });
 
   it('disables button if there are no claimable balances', () => {
