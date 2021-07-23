@@ -1,9 +1,9 @@
 import { observer } from 'mobx-react-lite';
-import React, { useContext } from 'react';
+import React from 'react';
 
 import { Box, Button, CircularProgress, Grid, makeStyles } from '@material-ui/core';
 
-import { StoreContext } from '../';
+import { StoreContext } from '../mobx/store';
 import { formatNumber } from '../utils/numberUtils';
 import AllocationCard from './AllocationCard';
 import BalanceTableCard from './BalanceTableCard';
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Portfolio = observer(() => {
   const classes = useStyles();
-  const store = useContext(StoreContext);
+  const store = React.useContext(StoreContext);
   const {
     account,
     isLoading,
@@ -123,7 +123,7 @@ const Portfolio = observer(() => {
               title="Strategy Balances"
               title2={formatNumber(totalAllocation(false, 'strategy'), 'currency')}
               subtitle1="Balances across all strategies"
-              subtitle2="Your total  strategy balances"
+              subtitle2="Your total strategy balances"
               headCells={[
                 { value: 'Strategy', align: 'left' },
                 { value: 'Portfolio % Alloc.', align: 'center' },

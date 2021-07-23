@@ -1,10 +1,10 @@
 import clsx from 'clsx';
 import { observer } from 'mobx-react-lite';
-import React, { useContext } from 'react';
+import React from 'react';
 
 import { Card, CardContent, makeStyles, Typography } from '@material-ui/core';
 
-import { StoreContext } from '../';
+import { StoreContext } from '../mobx/store';
 import useCardStyles from '../styles/cardStyles';
 import { formatNumber } from '../utils/numberUtils';
 
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 
 const BoostCard = observer(() => {
   const classes = { ...useStyles(), ...useCardStyles() };
-  const store = useContext(StoreContext);
+  const store = React.useContext(StoreContext);
   const { account } = store;
 
   return (

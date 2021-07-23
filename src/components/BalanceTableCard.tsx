@@ -75,7 +75,7 @@ interface ICell {
   align?: 'left' | 'center' | 'right';
 }
 
-interface IBalanceTableCard {
+export interface IBalanceTableCard {
   title: string;
   title2: string;
   subtitle1: string;

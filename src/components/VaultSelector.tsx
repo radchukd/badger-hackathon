@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
 
 type Vault = { icon: string; value: string; labels: Array<string> };
 
-interface IVaultSelector {
+export interface IVaultSelector {
   vaults: Array<Array<Vault>>;
   onClose: () => void;
   onAllClick: () => void;
@@ -67,11 +67,18 @@ const VaultSelector: React.FC<IVaultSelector> = ({
   };
 
   return (
-    <Box className={classes.dropdownContainer}>
+    <Box className={classes.dropdownContainer} data-testid="vault-selector-container">
       <Box display="flex" justifyContent="space-between">
         <Box ml={1}>
           <FormControlLabel
-            control={<Checkbox name="allSettVaultsCheckbox" checked={isAllChecked} onClick={onAllClick} />}
+            control={
+              <Checkbox
+                name="allSettVaultsCheckbox"
+                checked={isAllChecked}
+                onClick={onAllClick}
+                data-testid="vault-selector-vault-all-checkbox"
+              />
+            }
             label="All Sett Vaults"
           />
         </Box>
@@ -91,6 +98,7 @@ const VaultSelector: React.FC<IVaultSelector> = ({
                   onClick={() => onItemClick(vault.value)}
                   selected={isItemChecked(vault.value)}
                   classes={{ selected: classes.selectedVaultItem }}
+                  data-testid="vault-selector-vault-list-item"
                 >
                   <Box mr={1}>{getVaultIcon(vault)}</Box>
                   <Box className={classes.vaultName}>{vault.value}</Box>

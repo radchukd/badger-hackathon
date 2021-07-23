@@ -1,12 +1,12 @@
 import clsx from 'clsx';
 import { observer } from 'mobx-react-lite';
-import React, { useContext } from 'react';
+import React from 'react';
 import { Area, AreaChart, ResponsiveContainer, Tooltip } from 'recharts';
 
 import { Box, Button, ButtonGroup, Card, CardContent, makeStyles, Popper, Typography } from '@material-ui/core';
 import { Cached, ExpandMore, FiberManualRecord } from '@material-ui/icons';
 
-import { StoreContext } from '../';
+import { StoreContext } from '../mobx/store';
 import useCardStyles from '../styles/cardStyles';
 import { formatNumber } from '../utils/numberUtils';
 import VaultSelector from './VaultSelector';
@@ -102,7 +102,7 @@ const graphPeriods: Array<GraphPeriod> = ['1D', '1W', '1M', '1Y', 'All Time'];
 
 const EarningsGraphCard = observer(() => {
   const classes = { ...useStyles(), ...useCardStyles() };
-  const store = useContext(StoreContext);
+  const store = React.useContext(StoreContext);
   const { account /* , vaults */, earnedBadger } = store;
   const [vaultsMenuAnchor, setVaultsMenuAnchor] = React.useState<HTMLElement | null>(null);
   const [selectedVaults, setSelectedVaults] = React.useState<Array<string>>(vaults.flat().map((vault) => vault.value));
@@ -128,7 +128,12 @@ const EarningsGraphCard = observer(() => {
                 className={clsx(classes.cardSubheading2, classes.normalCaseButton)}
                 onClick={(event) => setVaultsMenuAnchor(vaultsMenuAnchor ? null : event.currentTarget)}
               >
-                <Box display="flex" alignItems="center" justifyContent="space-between">
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="space-between"
+                  data-testid="earnings-graph-card-dropdown-button"
+                >
                   All Sett Vaults
                   <ExpandMore fontSize="small" />
                 </Box>
@@ -162,13 +167,18 @@ const EarningsGraphCard = observer(() => {
           </Box>
           <Box display="flex" flexDirection="column" alignItems="flex-end">
             <Typography variant="h6">
-              <Box fontWeight="fontWeightRegular" color="info.main">
+              <Box
+                fontWeight="fontWeightRegular"
+                color={(account?.earnedValue ?? -1) < 0 ? 'warning.main' : 'info.main'}
+              >
                 {formatNumber(account?.earnedValue, 'currency')}
               </Box>
             </Typography>
-            <Box className={classes.cardSubheading2}>{formatNumber(earnedBadger, 'decimal')} $BADGER</Box>
+            <Box className={classes.cardSubheading2} color={earnedBadger < 0 ? 'warning.main' : 'info.main'}>
+              {formatNumber(earnedBadger, 'decimal')} $BADGER
+            </Box>
             <Box mt={2}>
-              <ButtonGroup>
+              <ButtonGroup data-testid="earnings-graph-card-period-group">
                 {graphPeriods.map((value, index) => (
                   <Button
                     key={index}
@@ -223,7 +233,7 @@ const EarningsGraphCard = observer(() => {
             <Box display="flex" alignItems="center">
               <Cached className={classes.refreshIcon} />
               <Box className={classes.cardSubheading2} color="text.secondary">
-                Data as of :29 May, 2021 11:39 PM
+                Data as of {new Date().toLocaleString('en-US')}
               </Box>
             </Box>
           </Box>

@@ -1,10 +1,10 @@
 import { observer } from 'mobx-react-lite';
-import React, { useContext } from 'react';
+import React from 'react';
 import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis } from 'recharts';
 
 import { Box, Card, CardContent, Divider, makeStyles, Typography, useMediaQuery } from '@material-ui/core';
 
-import { StoreContext } from '../';
+import { StoreContext } from '../mobx/store';
 import useCardStyles from '../styles/cardStyles';
 import { formatNumber } from '../utils/numberUtils';
 
@@ -58,7 +58,7 @@ const data = [
 const NetWorthCard = observer(() => {
   const classes = { ...useStyles(), ...useCardStyles() };
   const isMobile = useMediaQuery('(max-width: 767px)');
-  const store = useContext(StoreContext);
+  const store = React.useContext(StoreContext);
   const { account, roiPercentage, earnedBadger } = store;
 
   return (

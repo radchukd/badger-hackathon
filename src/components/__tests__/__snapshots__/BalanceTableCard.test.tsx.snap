@@ -1,0 +1,1758 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BalanceTableCard renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardRoot-8 MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          class="MuiCardContent-root makeStyles-content-9 makeStyles-contentWithoutPadding-1"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-16 makeStyles-headline-2"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-17"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-18"
+                >
+                  Asset Balances
+                </div>
+              </h6>
+              <div
+                class="MuiBox-root MuiBox-root-19 makeStyles-cardSubheading3-14"
+              >
+                Assets that are in your wallet
+              </div>
+            </div>
+            <div
+              class="MuiBox-root MuiBox-root-20"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-21"
+                >
+                  $392,319.77
+                </div>
+              </h6>
+              <div
+                class="MuiBox-root MuiBox-root-22 makeStyles-cardSubheading3-14"
+              >
+                Your total asset holdings
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiTableContainer-root"
+          >
+            <table
+              aria-label="balance table"
+              class="MuiTable-root makeStyles-balanceTable-3"
+            >
+              <thead
+                class="MuiTableHead-root"
+              >
+                <tr
+                  class="MuiTableRow-root makeStyles-tableHeadRow-4 MuiTableRow-head"
+                >
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft"
+                    scope="col"
+                  >
+                    Tokens
+                  </th>
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter"
+                    scope="col"
+                  >
+                    Portfolio % Alloc.
+                  </th>
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                    scope="col"
+                  >
+                    Price
+                  </th>
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                    scope="col"
+                  >
+                    Balance
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="MuiTableBody-root"
+              >
+                <tr
+                  class="MuiTableRow-root makeStyles-tableBodyRow-5"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-23"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-24 makeStyles-cellHeading-6"
+                      >
+                        BADGER
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-25 makeStyles-cellSubheading-7"
+                      >
+                        $145.10
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-26"
+                    >
+                      1.62%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-27"
+                    >
+                      3.39%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-28"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-29 makeStyles-cellHeading-6"
+                      >
+                        18.16
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-30 makeStyles-cellSubheading-7"
+                      >
+                        $145.10
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root makeStyles-tableBodyRow-5"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-31"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-32 makeStyles-cellHeading-6"
+                      >
+                        cvxCRV
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-33 makeStyles-cellSubheading-7"
+                      >
+                        $11.06
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-34"
+                    >
+                      0.12%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-35"
+                    >
+                      58.45%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-36"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-37 makeStyles-cellHeading-6"
+                      >
+                        7.13
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-38 makeStyles-cellSubheading-7"
+                      >
+                        $11.06
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root makeStyles-tableBodyRow-5"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-39"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-40 makeStyles-cellHeading-6"
+                      >
+                        WBTC
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-41 makeStyles-cellSubheading-7"
+                      >
+                        -$506.13
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-42"
+                    >
+                      5.65%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-43"
+                    >
+                      2.29%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-44"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-45 makeStyles-cellHeading-6"
+                      >
+                        -0.02
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-46 makeStyles-cellSubheading-7"
+                      >
+                        -$506.13
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root makeStyles-tableBodyRow-5"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-47"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-48 makeStyles-cellHeading-6"
+                      >
+                        CVX
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-49 makeStyles-cellSubheading-7"
+                      >
+                        $11.65
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-50"
+                    >
+                      0.13%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-51"
+                    >
+                      62.92%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-52"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-53 makeStyles-cellHeading-6"
+                      >
+                        3.04
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-54 makeStyles-cellSubheading-7"
+                      >
+                        $11.65
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root makeStyles-tableBodyRow-5"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-55"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-56 makeStyles-cellHeading-6"
+                      >
+                        crvpBTC
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-57 makeStyles-cellSubheading-7"
+                      >
+                        $56.33
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-58"
+                    >
+                      0.63%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-59"
+                    >
+                      22.8%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-60"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-61 makeStyles-cellHeading-6"
+                      >
+                        0
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-62 makeStyles-cellSubheading-7"
+                      >
+                        $56.33
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root makeStyles-tableBodyRow-5"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-63"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-64 makeStyles-cellHeading-6"
+                      >
+                        SLP-WBTC-ETH
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-65 makeStyles-cellSubheading-7"
+                      >
+                        $0.00
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-66"
+                    >
+                      0%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-67"
+                    >
+                      14.74%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-68"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-69 makeStyles-cellHeading-6"
+                      >
+                        0
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-70 makeStyles-cellSubheading-7"
+                      >
+                        $0.00
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root makeStyles-tableBodyRow-5"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-71"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-72 makeStyles-cellHeading-6"
+                      >
+                        DIGG
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-73 makeStyles-cellSubheading-7"
+                      >
+                        -$5,544.45
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-74"
+                    >
+                      61.94%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-75"
+                    >
+                      24.44%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-76"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-77 makeStyles-cellHeading-6"
+                      >
+                        -0.22
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-78 makeStyles-cellSubheading-7"
+                      >
+                        -$5,544.45
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root makeStyles-tableBodyRow-5"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-79"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-80 makeStyles-cellHeading-6"
+                      >
+                        SLP-DIGG-WBTC
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-81 makeStyles-cellSubheading-7"
+                      >
+                        $736.23
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-82"
+                    >
+                      8.22%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-83"
+                    >
+                      68.21%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-84"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-85 makeStyles-cellHeading-6"
+                      >
+                        0
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-86 makeStyles-cellSubheading-7"
+                      >
+                        $736.23
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root makeStyles-tableBodyRow-5"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-87"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-88 makeStyles-cellHeading-6"
+                      >
+                        SLP-IBBTC-WBTC
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-89 makeStyles-cellSubheading-7"
+                      >
+                        $0.00
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-90"
+                    >
+                      0%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-91"
+                    >
+                      13.41%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-92"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-93 makeStyles-cellHeading-6"
+                      >
+                        0
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-94 makeStyles-cellSubheading-7"
+                      >
+                        $0.00
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root makeStyles-tableBodyRow-5"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-95"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-96 makeStyles-cellHeading-6"
+                      >
+                        crvhBTC
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-97 makeStyles-cellSubheading-7"
+                      >
+                        $30.31
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-98"
+                    >
+                      0.34%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-99"
+                    >
+                      23.43%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-100"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-101 makeStyles-cellHeading-6"
+                      >
+                        0
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-102 makeStyles-cellSubheading-7"
+                      >
+                        $30.31
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root makeStyles-tableBodyRow-5"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-103"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-104 makeStyles-cellHeading-6"
+                      >
+                        crvtBTC
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-105 makeStyles-cellSubheading-7"
+                      >
+                        $571.80
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-106"
+                    >
+                      6.39%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-107"
+                    >
+                      11.78%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-108"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-109 makeStyles-cellHeading-6"
+                      >
+                        0.03
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-110 makeStyles-cellSubheading-7"
+                      >
+                        $571.80
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root makeStyles-tableBodyRow-5"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-111"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-112 makeStyles-cellHeading-6"
+                      >
+                        crvTricrypto
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-113 makeStyles-cellSubheading-7"
+                      >
+                        $231.93
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-114"
+                    >
+                      2.59%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-115"
+                    >
+                      43.49%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-116"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-117 makeStyles-cellHeading-6"
+                      >
+                        0.28
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-118 makeStyles-cellSubheading-7"
+                      >
+                        $231.93
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root makeStyles-tableBodyRow-5"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-119"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-120 makeStyles-cellHeading-6"
+                      >
+                        crvsBTC
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-121 makeStyles-cellSubheading-7"
+                      >
+                        $1,106.85
+                      </div>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-122"
+                    >
+                      12.36%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-123"
+                    >
+                      7.95%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-124"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-125 makeStyles-cellHeading-6"
+                      >
+                        0.03
+                      </div>
+                      <div
+                        class="MuiBox-root MuiBox-root-126 makeStyles-cellSubheading-7"
+                      >
+                        $1,106.85
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-8 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root makeStyles-content-9 makeStyles-contentWithoutPadding-1"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-16 makeStyles-headline-2"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-17"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-18"
+              >
+                Asset Balances
+              </div>
+            </h6>
+            <div
+              class="MuiBox-root MuiBox-root-19 makeStyles-cardSubheading3-14"
+            >
+              Assets that are in your wallet
+            </div>
+          </div>
+          <div
+            class="MuiBox-root MuiBox-root-20"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-21"
+              >
+                $392,319.77
+              </div>
+            </h6>
+            <div
+              class="MuiBox-root MuiBox-root-22 makeStyles-cardSubheading3-14"
+            >
+              Your total asset holdings
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiTableContainer-root"
+        >
+          <table
+            aria-label="balance table"
+            class="MuiTable-root makeStyles-balanceTable-3"
+          >
+            <thead
+              class="MuiTableHead-root"
+            >
+              <tr
+                class="MuiTableRow-root makeStyles-tableHeadRow-4 MuiTableRow-head"
+              >
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft"
+                  scope="col"
+                >
+                  Tokens
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter"
+                  scope="col"
+                >
+                  Portfolio % Alloc.
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                  scope="col"
+                >
+                  Price
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                  scope="col"
+                >
+                  Balance
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="MuiTableBody-root"
+            >
+              <tr
+                class="MuiTableRow-root makeStyles-tableBodyRow-5"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-23"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-24 makeStyles-cellHeading-6"
+                    >
+                      BADGER
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-25 makeStyles-cellSubheading-7"
+                    >
+                      $145.10
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-26"
+                  >
+                    1.62%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-27"
+                  >
+                    3.39%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-28"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-29 makeStyles-cellHeading-6"
+                    >
+                      18.16
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-30 makeStyles-cellSubheading-7"
+                    >
+                      $145.10
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root makeStyles-tableBodyRow-5"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-31"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-32 makeStyles-cellHeading-6"
+                    >
+                      cvxCRV
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-33 makeStyles-cellSubheading-7"
+                    >
+                      $11.06
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-34"
+                  >
+                    0.12%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-35"
+                  >
+                    58.45%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-36"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-37 makeStyles-cellHeading-6"
+                    >
+                      7.13
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-38 makeStyles-cellSubheading-7"
+                    >
+                      $11.06
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root makeStyles-tableBodyRow-5"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-39"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-40 makeStyles-cellHeading-6"
+                    >
+                      WBTC
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-41 makeStyles-cellSubheading-7"
+                    >
+                      -$506.13
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-42"
+                  >
+                    5.65%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-43"
+                  >
+                    2.29%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-44"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-45 makeStyles-cellHeading-6"
+                    >
+                      -0.02
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-46 makeStyles-cellSubheading-7"
+                    >
+                      -$506.13
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root makeStyles-tableBodyRow-5"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-47"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-48 makeStyles-cellHeading-6"
+                    >
+                      CVX
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-49 makeStyles-cellSubheading-7"
+                    >
+                      $11.65
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-50"
+                  >
+                    0.13%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-51"
+                  >
+                    62.92%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-52"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-53 makeStyles-cellHeading-6"
+                    >
+                      3.04
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-54 makeStyles-cellSubheading-7"
+                    >
+                      $11.65
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root makeStyles-tableBodyRow-5"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-55"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-56 makeStyles-cellHeading-6"
+                    >
+                      crvpBTC
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-57 makeStyles-cellSubheading-7"
+                    >
+                      $56.33
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-58"
+                  >
+                    0.63%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-59"
+                  >
+                    22.8%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-60"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-61 makeStyles-cellHeading-6"
+                    >
+                      0
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-62 makeStyles-cellSubheading-7"
+                    >
+                      $56.33
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root makeStyles-tableBodyRow-5"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-63"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-64 makeStyles-cellHeading-6"
+                    >
+                      SLP-WBTC-ETH
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-65 makeStyles-cellSubheading-7"
+                    >
+                      $0.00
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-66"
+                  >
+                    0%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-67"
+                  >
+                    14.74%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-68"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-69 makeStyles-cellHeading-6"
+                    >
+                      0
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-70 makeStyles-cellSubheading-7"
+                    >
+                      $0.00
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root makeStyles-tableBodyRow-5"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-71"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-72 makeStyles-cellHeading-6"
+                    >
+                      DIGG
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-73 makeStyles-cellSubheading-7"
+                    >
+                      -$5,544.45
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-74"
+                  >
+                    61.94%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-75"
+                  >
+                    24.44%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-76"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-77 makeStyles-cellHeading-6"
+                    >
+                      -0.22
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-78 makeStyles-cellSubheading-7"
+                    >
+                      -$5,544.45
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root makeStyles-tableBodyRow-5"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-79"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-80 makeStyles-cellHeading-6"
+                    >
+                      SLP-DIGG-WBTC
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-81 makeStyles-cellSubheading-7"
+                    >
+                      $736.23
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-82"
+                  >
+                    8.22%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-83"
+                  >
+                    68.21%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-84"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-85 makeStyles-cellHeading-6"
+                    >
+                      0
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-86 makeStyles-cellSubheading-7"
+                    >
+                      $736.23
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root makeStyles-tableBodyRow-5"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-87"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-88 makeStyles-cellHeading-6"
+                    >
+                      SLP-IBBTC-WBTC
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-89 makeStyles-cellSubheading-7"
+                    >
+                      $0.00
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-90"
+                  >
+                    0%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-91"
+                  >
+                    13.41%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-92"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-93 makeStyles-cellHeading-6"
+                    >
+                      0
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-94 makeStyles-cellSubheading-7"
+                    >
+                      $0.00
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root makeStyles-tableBodyRow-5"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-95"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-96 makeStyles-cellHeading-6"
+                    >
+                      crvhBTC
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-97 makeStyles-cellSubheading-7"
+                    >
+                      $30.31
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-98"
+                  >
+                    0.34%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-99"
+                  >
+                    23.43%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-100"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-101 makeStyles-cellHeading-6"
+                    >
+                      0
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-102 makeStyles-cellSubheading-7"
+                    >
+                      $30.31
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root makeStyles-tableBodyRow-5"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-103"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-104 makeStyles-cellHeading-6"
+                    >
+                      crvtBTC
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-105 makeStyles-cellSubheading-7"
+                    >
+                      $571.80
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-106"
+                  >
+                    6.39%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-107"
+                  >
+                    11.78%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-108"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-109 makeStyles-cellHeading-6"
+                    >
+                      0.03
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-110 makeStyles-cellSubheading-7"
+                    >
+                      $571.80
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root makeStyles-tableBodyRow-5"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-111"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-112 makeStyles-cellHeading-6"
+                    >
+                      crvTricrypto
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-113 makeStyles-cellSubheading-7"
+                    >
+                      $231.93
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-114"
+                  >
+                    2.59%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-115"
+                  >
+                    43.49%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-116"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-117 makeStyles-cellHeading-6"
+                    >
+                      0.28
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-118 makeStyles-cellSubheading-7"
+                    >
+                      $231.93
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="MuiTableRow-root makeStyles-tableBodyRow-5"
+              >
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-119"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-120 makeStyles-cellHeading-6"
+                    >
+                      crvsBTC
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-121 makeStyles-cellSubheading-7"
+                    >
+                      $1,106.85
+                    </div>
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-122"
+                  >
+                    12.36%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-123"
+                  >
+                    7.95%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-124"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-125 makeStyles-cellHeading-6"
+                    >
+                      0.03
+                    </div>
+                    <div
+                      class="MuiBox-root MuiBox-root-126 makeStyles-cellSubheading-7"
+                    >
+                      $1,106.85
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

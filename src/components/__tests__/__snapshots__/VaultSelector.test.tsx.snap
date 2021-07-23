@@ -1,0 +1,992 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VaultSelector renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiBox-root MuiBox-root-15 makeStyles-dropdownContainer-1"
+        data-testid="vault-selector-container"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-16"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-17"
+          >
+            <label
+              class="MuiFormControlLabel-root"
+            >
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-18 MuiCheckbox-root MuiCheckbox-colorSecondary PrivateSwitchBase-checked-19 Mui-checked MuiIconButton-colorSecondary"
+                data-testid="vault-selector-vault-all-checkbox"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <input
+                    checked=""
+                    class="PrivateSwitchBase-input-21"
+                    data-indeterminate="false"
+                    name="allSettVaultsCheckbox"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </span>
+              <span
+                class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+              >
+                All Sett Vaults
+              </span>
+            </label>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-closeIcon-2 MuiSvgIcon-fontSizeSmall"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-22"
+            >
+              <div
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+                data-testid="vault-selector-vault-list-item"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-23"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="MuiBox-root MuiBox-root-24 makeStyles-vaultName-5"
+                >
+                  wBTC/Digg
+                </div>
+                <div
+                  class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall"
+                  >
+                    UNI
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+                data-testid="vault-selector-vault-list-item"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-25"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="MuiBox-root MuiBox-root-26 makeStyles-vaultName-5"
+                >
+                  Badger/wBTC
+                </div>
+                <div
+                  class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall"
+                  >
+                    UNI
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-27"
+            >
+              <div
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+                data-testid="vault-selector-vault-list-item"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-28"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="MuiBox-root MuiBox-root-29 makeStyles-vaultName-5"
+                >
+                  Wrapped BTC/Digg
+                </div>
+                <div
+                  class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall"
+                  >
+                    SUSHI
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+                data-testid="vault-selector-vault-list-item"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-30"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="MuiBox-root MuiBox-root-31 makeStyles-vaultName-5"
+                >
+                  Wrapped BTC/Badger
+                </div>
+                <div
+                  class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall"
+                  >
+                    SUSHI
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+                data-testid="vault-selector-vault-list-item"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-32"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="MuiBox-root MuiBox-root-33 makeStyles-vaultName-5"
+                >
+                  Wrapped BTC/Wrapped Ether
+                </div>
+                <div
+                  class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall"
+                  >
+                    SUSHI
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-34"
+            >
+              <div
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+                data-testid="vault-selector-vault-list-item"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-35"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="MuiBox-root MuiBox-root-36 makeStyles-vaultName-5"
+                >
+                  crvRenWBTC
+                </div>
+                <div
+                  class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall"
+                  >
+                    CURVE
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+                data-testid="vault-selector-vault-list-item"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-37"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="MuiBox-root MuiBox-root-38 makeStyles-vaultName-5"
+                >
+                  renBTC/wBTC/sBTC
+                </div>
+                <div
+                  class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall"
+                  >
+                    CURVE
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+                data-testid="vault-selector-vault-list-item"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-39"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="MuiBox-root MuiBox-root-40 makeStyles-vaultName-5"
+                >
+                  tBTC/sBTCCrv LP
+                </div>
+                <div
+                  class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall"
+                  >
+                    CURVE
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </div>
+              <div
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+                data-testid="vault-selector-vault-list-item"
+                role="button"
+                tabindex="0"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-41"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="MuiBox-root MuiBox-root-42 makeStyles-vaultName-5"
+                >
+                  crvRenWBTC
+                </div>
+                <div
+                  class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall"
+                  >
+                    CURVE
+                  </span>
+                </div>
+                <div
+                  class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+                >
+                  <span
+                    class="MuiChip-label MuiChip-labelSmall"
+                  >
+                    HARVEST
+                  </span>
+                </div>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiBox-root MuiBox-root-15 makeStyles-dropdownContainer-1"
+      data-testid="vault-selector-container"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-16"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-17"
+        >
+          <label
+            class="MuiFormControlLabel-root"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-18 MuiCheckbox-root MuiCheckbox-colorSecondary PrivateSwitchBase-checked-19 Mui-checked MuiIconButton-colorSecondary"
+              data-testid="vault-selector-vault-all-checkbox"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <input
+                  checked=""
+                  class="PrivateSwitchBase-input-21"
+                  data-indeterminate="false"
+                  name="allSettVaultsCheckbox"
+                  type="checkbox"
+                  value=""
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+            <span
+              class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+            >
+              All Sett Vaults
+            </span>
+          </label>
+        </div>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root makeStyles-closeIcon-2 MuiSvgIcon-fontSizeSmall"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-22"
+          >
+            <div
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+              data-testid="vault-selector-vault-list-item"
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-23"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root-24 makeStyles-vaultName-5"
+              >
+                wBTC/Digg
+              </div>
+              <div
+                class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelSmall"
+                >
+                  UNI
+                </span>
+              </div>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+              data-testid="vault-selector-vault-list-item"
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-25"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root-26 makeStyles-vaultName-5"
+              >
+                Badger/wBTC
+              </div>
+              <div
+                class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelSmall"
+                >
+                  UNI
+                </span>
+              </div>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-27"
+          >
+            <div
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+              data-testid="vault-selector-vault-list-item"
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-28"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root-29 makeStyles-vaultName-5"
+              >
+                Wrapped BTC/Digg
+              </div>
+              <div
+                class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelSmall"
+                >
+                  SUSHI
+                </span>
+              </div>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+              data-testid="vault-selector-vault-list-item"
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-30"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root-31 makeStyles-vaultName-5"
+              >
+                Wrapped BTC/Badger
+              </div>
+              <div
+                class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelSmall"
+                >
+                  SUSHI
+                </span>
+              </div>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+              data-testid="vault-selector-vault-list-item"
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-32"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root-33 makeStyles-vaultName-5"
+              >
+                Wrapped BTC/Wrapped Ether
+              </div>
+              <div
+                class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelSmall"
+                >
+                  SUSHI
+                </span>
+              </div>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-34"
+          >
+            <div
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+              data-testid="vault-selector-vault-list-item"
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-35"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root-36 makeStyles-vaultName-5"
+              >
+                crvRenWBTC
+              </div>
+              <div
+                class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelSmall"
+                >
+                  CURVE
+                </span>
+              </div>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+              data-testid="vault-selector-vault-list-item"
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-37"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root-38 makeStyles-vaultName-5"
+              >
+                renBTC/wBTC/sBTC
+              </div>
+              <div
+                class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelSmall"
+                >
+                  CURVE
+                </span>
+              </div>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+              data-testid="vault-selector-vault-list-item"
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-39"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root-40 makeStyles-vaultName-5"
+              >
+                tBTC/sBTCCrv LP
+              </div>
+              <div
+                class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelSmall"
+                >
+                  CURVE
+                </span>
+              </div>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </div>
+            <div
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiListItem-root makeStyles-vaultItem-3 MuiListItem-gutters MuiListItem-button Mui-selected makeStyles-selectedVaultItem-4"
+              data-testid="vault-selector-vault-list-item"
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-41"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root MuiBox-root-42 makeStyles-vaultName-5"
+              >
+                crvRenWBTC
+              </div>
+              <div
+                class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelSmall"
+                >
+                  CURVE
+                </span>
+              </div>
+              <div
+                class="MuiChip-root makeStyles-vaultChip-6 MuiChip-sizeSmall"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelSmall"
+                >
+                  HARVEST
+                </span>
+              </div>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

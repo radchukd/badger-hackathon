@@ -1,5 +1,5 @@
 import { startRouter } from 'mobx-router';
-import React, { createContext } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { CssBaseline, ThemeProvider } from '@material-ui/core';
@@ -7,10 +7,7 @@ import { CssBaseline, ThemeProvider } from '@material-ui/core';
 import App from './App';
 import routes from './config/routes';
 import theme from './config/theme';
-import store, { RootStore } from './mobx/store';
-
-export const StoreContext = createContext({} as RootStore);
-export const StoreProvider = StoreContext.Provider;
+import store, { StoreProvider } from './mobx/store';
 
 startRouter(routes, store, {
   html5history: true,
@@ -23,5 +20,6 @@ ReactDOM.render(
       <App />
     </ThemeProvider>
   </StoreProvider>,
-  document.getElementById('root'),
+  // for testing purposes
+  document.getElementById('root') || document.createElement('div'),
 );

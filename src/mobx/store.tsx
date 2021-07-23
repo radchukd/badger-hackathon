@@ -1,20 +1,26 @@
 import { action, extendObservable } from 'mobx';
 import { RouterStore } from 'mobx-router';
 import fetch from 'node-fetch';
+import React from 'react';
+
 import { Account } from '../model/account.interface';
 import { SettBalance } from '../model/sett-balance.interface';
 import { SettVault } from '../model/sett-vault.interface';
 
 //declare let window: Window & { ethereum };
 
+interface IRootStore {
+  preload: boolean;
+}
+
 export class RootStore {
   private baseUrl = 'https://api.badger.finance/v2';
   public router: RouterStore<RootStore>;
-  public account?: Account;
+  public account?: Account | null;
   public prices?: Record<string, number>;
   public vaults?: SettVault[];
 
-  constructor() {
+  constructor({ preload }: IRootStore) {
     this.router = new RouterStore<RootStore>(this);
 
     extendObservable(this, {
@@ -23,9 +29,11 @@ export class RootStore {
       vaults: this.vaults,
     });
 
-    this.loadAccount();
-    this.loadPrices();
-    this.loadVaults();
+    if (preload) {
+      this.loadAccount();
+      this.loadPrices();
+      this.loadVaults();
+    }
   }
 
   loadAccount = action(async (): Promise<void> => {
@@ -53,23 +61,23 @@ export class RootStore {
     }); */
 
     const res = await fetch(`${this.baseUrl}/accounts/0x4e65175f05b4140a0747c29cce997cd4bb7190d4`);
-    if (res.ok) {
-      this.account = await res.json();
-    }
+
+    if (res.ok) this.account = await res.json();
+    else this.account = null;
   });
 
   loadPrices = action(async (): Promise<void> => {
     const res = await fetch(`${this.baseUrl}/prices`);
-    if (res.ok) {
-      this.prices = (await res.json()) || [];
-    }
+
+    if (res.ok) this.prices = await res.json();
+    else this.prices = {};
   });
 
   loadVaults = action(async (): Promise<void> => {
     const res = await fetch(`${this.baseUrl}/setts`);
-    if (res.ok) {
-      this.vaults = (await res.json()) || [];
-    }
+
+    if (res.ok) this.vaults = await res.json();
+    else this.vaults = [];
   });
 
   get isLoading(): boolean {
@@ -162,6 +170,10 @@ export class RootStore {
   };
 }
 
-const store = new RootStore();
+const store = new RootStore({ preload: true });
+
+export const StoreContext = React.createContext({} as RootStore);
+
+export const StoreProvider = StoreContext.Provider;
 
 export default store;
