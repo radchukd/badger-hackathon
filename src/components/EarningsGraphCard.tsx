@@ -3,7 +3,17 @@ import { observer } from 'mobx-react-lite';
 import React from 'react';
 import { Area, AreaChart, ResponsiveContainer, Tooltip } from 'recharts';
 
-import { Box, Button, ButtonGroup, Card, CardContent, makeStyles, Popper, Typography } from '@material-ui/core';
+import {
+  Box,
+  Button,
+  ButtonGroup,
+  Card,
+  CardContent,
+  makeStyles,
+  Popper,
+  Typography,
+  useMediaQuery,
+} from '@material-ui/core';
 import { Cached, ExpandMore, FiberManualRecord } from '@material-ui/icons';
 
 import { StoreContext } from '../mobx/store';
@@ -25,11 +35,20 @@ const useStyles = makeStyles((theme) => ({
   selectedPeriodButton: {
     backgroundColor: theme.palette.primary.dark,
   },
-  chartContainer: { backgroundColor: '#101010' },
+  chartContainer: {
+    overflowX: 'auto',
+    backgroundColor: '#101010',
+  },
   refreshIcon: {
     marginRight: theme.spacing(1),
     fontSize: '14px',
     fill: '#444444',
+  },
+  boxGap: {
+    gap: theme.spacing(2),
+  },
+  assetIcon: {
+    fontSize: '8px',
   },
 }));
 
@@ -102,6 +121,7 @@ const graphPeriods: Array<GraphPeriod> = ['1D', '1W', '1M', '1Y', 'All Time'];
 
 const EarningsGraphCard = observer(() => {
   const classes = { ...useStyles(), ...useCardStyles() };
+  const isMobile = useMediaQuery('(max-width: 767px)');
   const store = React.useContext(StoreContext);
   const { account /* , vaults */, earnedBadger } = store;
   const [vaultsMenuAnchor, setVaultsMenuAnchor] = React.useState<HTMLElement | null>(null);
@@ -111,8 +131,13 @@ const EarningsGraphCard = observer(() => {
   return (
     <Card className={classes.cardRoot}>
       <CardContent className={classes.content}>
-        <Box display="flex" justifyContent="space-between">
-          <Box display="flex" flexDirection="column" alignItems="flex-start">
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          flexDirection={isMobile ? 'column' : 'row'}
+          className={classes.boxGap}
+        >
+          <Box display="flex" flexDirection="column" alignItems={isMobile ? 'center' : 'flex-start'}>
             <Typography variant="h6">
               <Box fontWeight="fontWeightRegular">Earnings from Sett vaults</Box>
             </Typography>
@@ -165,7 +190,7 @@ const EarningsGraphCard = observer(() => {
               />
             </Popper>
           </Box>
-          <Box display="flex" flexDirection="column" alignItems="flex-end">
+          <Box display="flex" flexDirection="column" alignItems={isMobile ? 'center' : 'flex-end'}>
             <Typography variant="h6">
               <Box
                 fontWeight="fontWeightRegular"
@@ -201,7 +226,7 @@ const EarningsGraphCard = observer(() => {
         </Box>
         <Box mt={2}>
           <Box className={classes.chartContainer}>
-            <ResponsiveContainer width="100%" height={465}>
+            <ResponsiveContainer width="100%" height={465} minWidth={600}>
               <AreaChart height={465} data={data}>
                 <defs>
                   <linearGradient id="colorUv">
@@ -219,14 +244,14 @@ const EarningsGraphCard = observer(() => {
               </AreaChart>
             </ResponsiveContainer>
           </Box>
-          <Box mt={2} display="flex" justifyContent="space-between">
-            <Box display="flex" style={{ gap: '16px' }}>
+          <Box mt={2} display="flex" justifyContent="space-between" flexDirection={isMobile ? 'column' : 'row'}>
+            <Box display="flex" className={classes.boxGap}>
               <Box display="flex" alignItems="center" className={classes.cardSubheading2}>
-                <FiberManualRecord style={{ fontSize: '8px' }} />
+                <FiberManualRecord className={classes.assetIcon} />
                 <Box ml={1}>crvRenWBTC</Box>
               </Box>
               <Box display="flex" alignItems="center" className={classes.cardSubheading2}>
-                <FiberManualRecord style={{ fontSize: '8px' }} />
+                <FiberManualRecord className={classes.assetIcon} />
                 <Box ml={1}>BADGER/WBTC</Box>
               </Box>
             </Box>

@@ -9,7 +9,6 @@ const useStyles = makeStyles((theme) => ({
   dropdownContainer: {
     padding: theme.spacing(2),
     backgroundColor: theme.palette.background.paper,
-    width: '55vw',
     borderRadius: theme.spacing(1),
   },
   closeIcon: {
@@ -19,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1) / 2,
     marginBottom: theme.spacing(1) / 2,
     padding: theme.spacing(1),
+    paddingRight: theme.spacing(2),
     borderRadius: theme.spacing(1),
   },
   selectedVaultItem: {

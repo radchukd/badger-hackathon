@@ -73,7 +73,6 @@ const NetWorthCard = observer(() => {
               <Box fontWeight="fontWeightRegular">Your net worth</Box>
             </Typography>
           </Box>
-
           <ResponsiveContainer width="100%" height={75}>
             <AreaChart height={75} data={data}>
               <defs>
@@ -89,7 +88,12 @@ const NetWorthCard = observer(() => {
           </ResponsiveContainer>
         </Box>
         <Divider className={classes.divider} />
-        <Box display="flex" className={classes.roiline}>
+        <Box
+          display="flex"
+          flexDirection={isMobile ? 'column' : 'row'}
+          alignItems={isMobile ? 'center' : 'flex-start'}
+          className={classes.roiline}
+        >
           <Box>
             <Box className={classes.cardSubheading3} color={roiPercentage >= 0 ? 'info.main' : 'warning.main'}>
               {formatNumber(roiPercentage, 'percent', 3)}

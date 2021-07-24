@@ -14,6 +14,7 @@ import {
   TableHead,
   TableRow,
   Typography,
+  useMediaQuery,
 } from '@material-ui/core';
 
 import useCardStyles from '../styles/cardStyles';
@@ -87,12 +88,18 @@ export interface IBalanceTableCard {
 const BalanceTableCard = observer(
   ({ title, title2, subtitle1, subtitle2, headCells, bodyCells }: IBalanceTableCard) => {
     const classes = { ...useStyles(), ...useCardStyles() };
+    const isMobile = useMediaQuery('(max-width: 767px)');
 
     return (
       <Card className={classes.cardRoot}>
         <CardContent className={clsx(classes.content, classes.contentWithoutPadding)}>
-          <Box display="flex" justifyContent="space-between" className={classes.headline}>
-            <Box display="flex" flexDirection="column" alignItems="flex-start">
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            flexDirection={isMobile ? 'column' : 'row'}
+            className={classes.headline}
+          >
+            <Box display="flex" flexDirection="column" alignItems={isMobile ? 'center' : 'flex-start'}>
               <Typography variant="h6">
                 <Box fontWeight="fontWeightRegular">{title}</Box>
               </Typography>
@@ -100,7 +107,7 @@ const BalanceTableCard = observer(
                 {subtitle1}
               </Box>
             </Box>
-            <Box display="flex" flexDirection="column" alignItems="flex-end">
+            <Box display="flex" flexDirection="column" alignItems={isMobile ? 'center' : 'flex-end'}>
               <Typography variant="h6">
                 <Box color={title2.startsWith('-') ? 'warning.main' : 'info.main'}>{title2}</Box>
               </Typography>
