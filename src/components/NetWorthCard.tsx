@@ -87,7 +87,7 @@ const NetWorthCard = observer(() => {
                     <stop offset="100%" stopColor="rgba(154, 255, 119, 0.06)" />
                   </linearGradient>
                 </defs>
-                <Tooltip />
+                <Tooltip isAnimationActive={false} />
                 <XAxis dataKey="name" hide={true} />
                 <Area
                   type="linear"

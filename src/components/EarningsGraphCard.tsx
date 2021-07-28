@@ -203,7 +203,7 @@ const EarningsGraphCard = observer(() => {
                     <stop offset="80.73%" stopColor="rgba(158, 142, 255, 0.06)" />
                   </linearGradient>
                 </defs>
-                <Tooltip />
+                <Tooltip isAnimationActive={false} />
                 <Area type="linear" dataKey="uv" stackId="1" stroke="#F2A627" strokeWidth={4} fill="url(#colorUv)" />
                 <Area type="linear" dataKey="pv" stackId="1" stroke="#9E8EFF" strokeWidth={4} fill="url(#colorPv)" />
               </AreaChart>

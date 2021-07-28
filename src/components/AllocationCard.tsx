@@ -45,7 +45,10 @@ const AllocationCard: React.FC<IAllocationCard> = ({ title, subtitle, data }) =>
         <Box display="flex" flexDirection={isTabletOrSmaller ? 'column' : 'row'} alignItems="center">
           <Box>
             <PieChart width={240} height={240}>
-              <Tooltip formatter={(value: number, name: string) => [formatNumber(value, 'percent'), name]} />
+              <Tooltip
+                isAnimationActive={false}
+                formatter={(value: number, name: string) => [formatNumber(value, 'percent'), name]}
+              />
               <Pie data={data} cx="50%" cy="50%" stroke="none" fill="#8884d8" dataKey="value">
                 {data.map((_entry, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
