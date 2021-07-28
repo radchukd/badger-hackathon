@@ -7,14 +7,20 @@ import { CssBaseline, ThemeProvider } from '@material-ui/core';
 import App from './App';
 import routes from './config/routes';
 import theme from './config/theme';
-import store, { StoreProvider } from './mobx/store';
+import { StoreProvider, rootStore, accountStore, portfolioStore } from './mobx/rootStore';
 
-startRouter(routes, store, {
+startRouter(routes, rootStore, {
   html5history: true,
 });
 
 ReactDOM.render(
-  <StoreProvider value={store}>
+  <StoreProvider
+    value={{
+      rootStore,
+      accountStore,
+      portfolioStore,
+    }}
+  >
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <App />

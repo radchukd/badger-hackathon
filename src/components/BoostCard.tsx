@@ -4,7 +4,7 @@ import React from 'react';
 
 import { Card, CardContent, makeStyles, Typography } from '@material-ui/core';
 
-import { StoreContext } from '../mobx/store';
+import { StoreContext } from '../mobx/rootStore';
 import useCardStyles from '../styles/cardStyles';
 import { formatNumber } from '../utils/numberUtils';
 
@@ -19,7 +19,9 @@ const useStyles = makeStyles((theme) => ({
 const BoostCard = observer(() => {
   const classes = { ...useStyles(), ...useCardStyles() };
   const store = React.useContext(StoreContext);
-  const { account } = store;
+  const {
+    accountStore: { account },
+  } = store;
 
   return (
     <Card className={classes.cardRoot}>

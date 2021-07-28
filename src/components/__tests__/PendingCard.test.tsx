@@ -4,13 +4,18 @@ import React from 'react';
 
 import { render, screen } from '@testing-library/react';
 
-import { RootStore, StoreProvider } from '../../mobx/store';
+import { AccountStore } from '../../mobx/accountStore';
+import { PortfolioStore } from '../../mobx/portfolioStore';
+import { RootStore, StoreProvider } from '../../mobx/rootStore';
 import PendingCard from '../PendingCard';
 import testAccount from './testAccount.json';
 
 describe('PendingCard', () => {
-  const store = new RootStore({ preload: false });
-  store.account = testAccount;
+  const rootStore = new RootStore();
+  const accountStore = new AccountStore({ preload: false });
+  const portfolioStore = new PortfolioStore();
+  const store = { rootStore, accountStore, portfolioStore };
+  accountStore.account = testAccount;
 
   it('renders correctly', () => {
     const tree = render(

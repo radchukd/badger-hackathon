@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core';
 export default makeStyles((theme) => ({
   cardRoot: {
     boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
-    borderRadius: '16px',
+    borderRadius: theme.spacing(2),
   },
   content: {
     display: 'flex',

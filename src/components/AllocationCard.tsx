@@ -1,4 +1,3 @@
-import { observer } from 'mobx-react-lite';
 import React from 'react';
 import { Cell, Pie, PieChart, Tooltip } from 'recharts';
 
@@ -10,22 +9,13 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
-  makeStyles,
   Typography,
   useMediaQuery,
 } from '@material-ui/core';
 
 import useCardStyles from '../styles/cardStyles';
+import useGlobalStyles from '../styles/globalStyles';
 import { formatNumber } from '../utils/numberUtils';
-
-const useStyles = makeStyles((/* theme */) => ({
-  otherAvatar: {
-    width: '40px',
-    height: '40px',
-    backgroundColor: '#000000',
-    borderRadius: '48px',
-  },
-}));
 
 export interface IAllocationCard {
   title: string;
@@ -33,14 +23,14 @@ export interface IAllocationCard {
   data: Array<{ name: string; value: number }>;
 }
 
-const AllocationCard = observer(({ title, subtitle, data }: IAllocationCard) => {
-  const classes = { ...useStyles(), ...useCardStyles() };
+const AllocationCard: React.FC<IAllocationCard> = ({ title, subtitle, data }) => {
+  const classes = { ...useCardStyles(), ...useGlobalStyles() };
   const isTabletOrSmaller = useMediaQuery('(max-width: 1280px)');
 
   const COLORS = ['#E8C6A7', '#6F80BB', '#304DB3', '#52B330', '#000000'];
 
   const getAssetIcon = (name: string): JSX.Element => {
-    if (name === 'Other') return <Box className={classes.otherAvatar} />;
+    if (name === 'Other') return <Box className={classes.avatarBig} />;
 
     return <img src={`/assets/${name}.png`} width="40" height="40" />;
   };
@@ -82,6 +72,6 @@ const AllocationCard = observer(({ title, subtitle, data }: IAllocationCard) => 
       </CardContent>
     </Card>
   );
-});
+};
 
 export default AllocationCard;

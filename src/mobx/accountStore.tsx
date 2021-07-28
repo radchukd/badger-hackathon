@@ -1,28 +1,22 @@
 import { action, extendObservable } from 'mobx';
-import { RouterStore } from 'mobx-router';
 import fetch from 'node-fetch';
-import React from 'react';
 
 import { Account } from '../model/account.interface';
 import { SettBalance } from '../model/sett-balance.interface';
 import { SettVault } from '../model/sett-vault.interface';
 
-//declare let window: Window & { ethereum };
-
-interface IRootStore {
+export type AccountStoreType = {
   preload: boolean;
-}
+};
 
-export class RootStore {
+export class AccountStore {
   private baseUrl = 'https://api.badger.finance/v2';
-  public router: RouterStore<RootStore>;
   public account?: Account | null;
   public prices?: Record<string, number>;
-  public vaults?: SettVault[];
+  public vaults?: Array<SettVault>;
+  public lastUpdate: Date | null = null;
 
-  constructor({ preload }: IRootStore) {
-    this.router = new RouterStore<RootStore>(this);
-
+  constructor({ preload }: AccountStoreType) {
     extendObservable(this, {
       account: this.account,
       prices: this.prices,
@@ -33,33 +27,11 @@ export class RootStore {
       this.loadAccount();
       this.loadPrices();
       this.loadVaults();
+      this.lastUpdate = new Date();
     }
   }
 
   loadAccount = action(async (): Promise<void> => {
-    /* if (!window.ethereum) {
-      console.log('Non-Ethereum browser detected.');
-    }
-
-    const addresses: Array<string> = await window.ethereum.request({
-      method: 'eth_requestAccounts',
-    });
-
-    if (addresses.length < 0) {
-      console.log('No account found.');
-    }
-
-    const web3 = new Web3(Web3.givenProvider);
-
-    addresses.forEach(async (address) => {
-      const res = await fetch(`${this.baseUrl}/accounts/${address}`);
-
-      if (res.ok) {
-        this.account = await res.json();
-        throw new Error('Account is found.');
-      }
-    }); */
-
     const res = await fetch(`${this.baseUrl}/accounts/0x4e65175f05b4140a0747c29cce997cd4bb7190d4`);
 
     if (res.ok) this.account = await res.json();
@@ -88,6 +60,7 @@ export class RootStore {
 
   get roiPercentage(): number {
     if (!this.account?.value || !this.account?.earnedValue) return 0;
+
     return this.account?.earnedValue / this.account?.value;
   }
 
@@ -96,13 +69,7 @@ export class RootStore {
   }
 
   get earnedBadger(): number {
-    if (!this.prices) return 0;
-
-    const badgerPrice = this.prices['0x3472A5A71965499acd81997a54BBA8D852C6E53d'];
-
-    if (!badgerPrice || !this.account?.earnedValue) return 0;
-
-    return this.account?.earnedValue / badgerPrice;
+    return this.account?.balances?.find((balance) => balance.asset === 'BADGER')?.earnedValue ?? 0;
   }
 
   assetValue = (balance: SettBalance): number => {
@@ -139,6 +106,7 @@ export class RootStore {
         })) ?? [];
     const top4total = top4?.reduce((prev, cur) => prev + cur.value ?? 0, 0);
     const other = { name: 'Other', value: 1 - top4total };
+
     return [...top4, other];
   };
 
@@ -170,10 +138,29 @@ export class RootStore {
   };
 }
 
-const store = new RootStore({ preload: true });
+/*
+declare let window: Window & { ethereum };
 
-export const StoreContext = React.createContext({} as RootStore);
+if (!window.ethereum) {
+    console.log('Non-Ethereum browser detected.');
+  }
 
-export const StoreProvider = StoreContext.Provider;
+  const addresses: Array<string> = await window.ethereum.request({
+    method: 'eth_requestAccounts',
+  });
 
-export default store;
+  if (addresses.length < 0) {
+    console.log('No account found.');
+  }
+
+  const web3 = new Web3(Web3.givenProvider);
+
+  addresses.forEach(async (address) => {
+    const res = await fetch(`${this.baseUrl}/accounts/${address}`);
+
+    if (res.ok) {
+      this.account = await res.json();
+      throw new Error('Account is found.');
+    }
+  });
+*/

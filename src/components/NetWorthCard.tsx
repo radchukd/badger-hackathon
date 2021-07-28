@@ -4,16 +4,12 @@ import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis } from 'recharts';
 
 import { Box, Card, CardContent, Divider, makeStyles, Typography, useMediaQuery } from '@material-ui/core';
 
-import { StoreContext } from '../mobx/store';
+import { StoreContext } from '../mobx/rootStore';
 import useCardStyles from '../styles/cardStyles';
+import useGlobalStyles from '../styles/globalStyles';
 import { formatNumber } from '../utils/numberUtils';
 
 const useStyles = makeStyles((theme) => ({
-  divider: {
-    margin: `${theme.spacing(1)}px -${theme.spacing(2)}px`,
-    height: '0.5px',
-    backgroundColor: theme.palette.primary.dark,
-  },
   roiline: {
     gap: theme.spacing(5),
   },
@@ -21,6 +17,12 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '13px',
     lineHeight: '17px',
     color: theme.palette.text.secondary,
+  },
+  // https://github.com/recharts/recharts/issues/172#issuecomment-633651459
+  netWorthGraphContainer: {
+    flex: 1,
+    width: '100%',
+    overflow: 'hidden',
   },
 }));
 
@@ -56,10 +58,13 @@ const data = [
 ];
 
 const NetWorthCard = observer(() => {
-  const classes = { ...useStyles(), ...useCardStyles() };
+  const classes = { ...useStyles(), ...useCardStyles(), ...useGlobalStyles() };
   const isMobile = useMediaQuery('(max-width: 767px)');
+  const isTabletOrSmaller = useMediaQuery('(max-width: 1280px)');
   const store = React.useContext(StoreContext);
-  const { account, roiPercentage, earnedBadger } = store;
+  const {
+    accountStore: { account, roiPercentage, earnedBadger },
+  } = store;
 
   return (
     <Card className={classes.cardRoot}>
@@ -73,25 +78,35 @@ const NetWorthCard = observer(() => {
               <Box fontWeight="fontWeightRegular">Your net worth</Box>
             </Typography>
           </Box>
-          <ResponsiveContainer width="100%" height={75}>
-            <AreaChart height={75} data={data}>
-              <defs>
-                <linearGradient id="colorUv">
-                  <stop offset="0%" stopColor="rgba(70, 125, 51, 0.5)" />
-                  <stop offset="100%" stopColor="rgba(154, 255, 119, 0.06)" />
-                </linearGradient>
-              </defs>
-              <Tooltip />
-              <XAxis dataKey="name" hide={true} />
-              <Area type="linear" dataKey="uv" stroke="#52B330" strokeWidth={4} fill="url(#colorUv)" name="Net worth" />
-            </AreaChart>
-          </ResponsiveContainer>
+          <Box className={classes.netWorthGraphContainer}>
+            <ResponsiveContainer width="100%" height={75}>
+              <AreaChart height={75} data={data}>
+                <defs>
+                  <linearGradient id="colorUv">
+                    <stop offset="0%" stopColor="rgba(70, 125, 51, 0.5)" />
+                    <stop offset="100%" stopColor="rgba(154, 255, 119, 0.06)" />
+                  </linearGradient>
+                </defs>
+                <Tooltip />
+                <XAxis dataKey="name" hide={true} />
+                <Area
+                  type="linear"
+                  dataKey="uv"
+                  stroke="#52B330"
+                  strokeWidth={4}
+                  fill="url(#colorUv)"
+                  name="Net worth"
+                />
+              </AreaChart>
+            </ResponsiveContainer>
+          </Box>
         </Box>
         <Divider className={classes.divider} />
         <Box
           display="flex"
           flexDirection={isMobile ? 'column' : 'row'}
           alignItems={isMobile ? 'center' : 'flex-start'}
+          justifyContent={isTabletOrSmaller ? 'center' : 'flex-start'}
           className={classes.roiline}
         >
           <Box>

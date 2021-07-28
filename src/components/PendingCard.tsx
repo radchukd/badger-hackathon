@@ -4,9 +4,9 @@ import React from 'react';
 
 import { Button, Card, CardContent, makeStyles, Typography } from '@material-ui/core';
 
+import { StoreContext } from '../mobx/rootStore';
 import useCardStyles from '../styles/cardStyles';
 import { formatNumber } from '../utils/numberUtils';
-import { StoreContext } from '../mobx/store';
 
 const useStyles = makeStyles((theme) => ({
   claimButton: {
@@ -18,7 +18,9 @@ const useStyles = makeStyles((theme) => ({
 const PendingCard = observer(() => {
   const classes = { ...useStyles(), ...useCardStyles() };
   const store = React.useContext(StoreContext);
-  const { account, totalClaimable } = store;
+  const {
+    accountStore: { account, totalClaimable },
+  } = store;
   const canClaim = !!account?.claimableBalances.length;
 
   return (

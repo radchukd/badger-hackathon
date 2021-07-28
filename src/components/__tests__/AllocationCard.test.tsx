@@ -4,12 +4,12 @@ import React from 'react';
 
 import { render, screen } from '@testing-library/react';
 
-import { RootStore } from '../../mobx/store';
+import { AccountStore } from '../../mobx/accountStore';
 import AllocationCard, { IAllocationCard } from '../AllocationCard';
 
 describe('AllocationCard', () => {
-  const store = new RootStore({ preload: false });
-  const { loadAccount, allocationDistribution } = store;
+  const accountStore = new AccountStore({ preload: false });
+  const { loadAccount, allocationDistribution } = accountStore;
 
   let props: IAllocationCard;
 
@@ -53,6 +53,7 @@ describe('AllocationCard', () => {
         }}
       />,
     );
+
     expect(tree).toMatchSnapshot();
   });
 

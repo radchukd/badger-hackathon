@@ -1,9 +1,14 @@
+import { observer } from 'mobx-react-lite';
 import React from 'react';
 
-import { Box, Checkbox, Chip, FormControlLabel, Grid, IconButton, ListItem, makeStyles } from '@material-ui/core';
-import { Check, Close } from '@material-ui/icons';
+import { Box, Checkbox, FormControlLabel, IconButton, makeStyles } from '@material-ui/core';
+import { Close } from '@material-ui/icons';
 
+import { Vault } from '../mobx/portfolioStore';
+import { StoreContext } from '../mobx/rootStore';
 import useCardStyles from '../styles/cardStyles';
+import useGlobalStyles from '../styles/globalStyles';
+import VaultListItem from './VaultListItem';
 
 const useStyles = makeStyles((theme) => ({
   dropdownContainer: {
@@ -14,57 +19,18 @@ const useStyles = makeStyles((theme) => ({
   closeIcon: {
     color: theme.palette.primary.light,
   },
-  vaultItem: {
-    marginTop: theme.spacing(1) / 2,
-    marginBottom: theme.spacing(1) / 2,
-    padding: theme.spacing(1),
-    paddingRight: theme.spacing(2),
-    borderRadius: theme.spacing(1),
-  },
-  selectedVaultItem: {
-    '&.Mui-selected': {
-      backgroundColor: '#333333',
-    },
-  },
-  vaultName: {
-    color: theme.palette.primary.light,
-  },
-  vaultChip: {
-    fontSize: '10px',
-    lineHeight: '12px',
-    color: '#FFFFFF',
-    marginLeft: theme.spacing(1) / 2,
-    backgroundColor: theme.palette.primary.dark,
-    borderRadius: theme.spacing(1) / 2,
-  },
 }));
 
-type Vault = { icon: string; value: string; labels: Array<string> };
-
 export interface IVaultSelector {
-  vaults: Array<Array<Vault>>;
   onClose: () => void;
-  onAllClick: () => void;
-  isAllChecked: boolean;
-  onItemClick: (item: string) => void;
-  isItemChecked: (item: string) => boolean;
 }
 
-const VaultSelector: React.FC<IVaultSelector> = ({
-  vaults,
-  onClose,
-  onAllClick,
-  isAllChecked,
-  onItemClick,
-  isItemChecked,
-}) => {
-  const classes = { ...useStyles(), ...useCardStyles() };
-
-  const getVaultIcon = (vault: Vault): JSX.Element => {
-    if (isItemChecked(vault.value)) return <Check />;
-
-    return <img src={`/assets/${vault.icon}`} width="24" height="24" />;
-  };
+const VaultSelector = observer(({ onClose }: IVaultSelector) => {
+  const classes = { ...useStyles(), ...useCardStyles(), ...useGlobalStyles() };
+  const store = React.useContext(StoreContext);
+  const {
+    portfolioStore: { vaults, areAllSelected, onAllClick, onVaultClick, isVaultSelected },
+  } = store;
 
   return (
     <Box className={classes.dropdownContainer} data-testid="vault-selector-container">
@@ -74,7 +40,7 @@ const VaultSelector: React.FC<IVaultSelector> = ({
             control={
               <Checkbox
                 name="allSettVaultsCheckbox"
-                checked={isAllChecked}
+                checked={areAllSelected}
                 onClick={onAllClick}
                 data-testid="vault-selector-vault-all-checkbox"
               />
@@ -86,33 +52,24 @@ const VaultSelector: React.FC<IVaultSelector> = ({
           <Close fontSize="small" className={classes.closeIcon} />
         </IconButton>
       </Box>
-      <Grid container spacing={1}>
+      <Box display="flex" flexWrap="wrap" className={classes.boxGap}>
         {vaults.map((subvaults, subVaultIndex) => (
-          <Grid key={subVaultIndex} item xs={12} md={4}>
-            <Box display="flex" flexDirection="column">
-              {subvaults.map((vault, vaultIndex) => (
-                <ListItem
-                  key={vaultIndex}
-                  button
-                  className={classes.vaultItem}
-                  onClick={() => onItemClick(vault.value)}
-                  selected={isItemChecked(vault.value)}
-                  classes={{ selected: classes.selectedVaultItem }}
-                  data-testid="vault-selector-vault-list-item"
-                >
-                  <Box mr={1}>{getVaultIcon(vault)}</Box>
-                  <Box className={classes.vaultName}>{vault.value}</Box>
-                  {vault.labels.map((label, labelIndex) => (
-                    <Chip key={labelIndex} size="small" label={label} className={classes.vaultChip} />
-                  ))}
-                </ListItem>
-              ))}
-            </Box>
-          </Grid>
+          <Box key={subVaultIndex} display="flex" flexDirection="column" flexGrow={1}>
+            {subvaults.map((vault, vaultIndex) => (
+              <VaultListItem
+                key={vaultIndex}
+                vault={vault}
+                isButton={true}
+                onItemClick={(vault: Vault) => onVaultClick(vault)}
+                isItemChecked={isVaultSelected(vault)}
+                data-testid="vault-selector-vault-list-item"
+              />
+            ))}
+          </Box>
         ))}
-      </Grid>
+      </Box>
     </Box>
   );
-};
+});
 
 export default VaultSelector;

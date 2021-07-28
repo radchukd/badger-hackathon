@@ -4,10 +4,30 @@ import React from 'react';
 
 import { fireEvent, render, screen } from '@testing-library/react';
 
-import store, { StoreProvider } from '../../mobx/store';
+import { AccountStore } from '../../mobx/accountStore';
+import { PortfolioStore } from '../../mobx/portfolioStore';
+import { RootStore, StoreProvider } from '../../mobx/rootStore';
 import EarningsGraphCard from '../EarningsGraphCard';
+import testAccount from './testAccount.json';
 
 describe('EarningsGraphCard', () => {
+  const rootStore = new RootStore();
+  const accountStore = new AccountStore({ preload: false });
+  const portfolioStore = new PortfolioStore();
+  const store = { rootStore, accountStore, portfolioStore };
+  accountStore.account = testAccount;
+  accountStore.lastUpdate = new Date('01.01.2021');
+
+  it('renders correctly', () => {
+    const tree = render(
+      <StoreProvider value={store}>
+        <EarningsGraphCard />
+      </StoreProvider>,
+    );
+
+    expect(tree).toMatchSnapshot();
+  });
+
   it('has week by default', () => {
     render(
       <StoreProvider value={store}>
@@ -88,6 +108,8 @@ describe('EarningsGraphCard', () => {
     fireEvent.click(firstVault);
 
     expect(firstVault.firstChild?.firstChild?.nodeName.toLowerCase()).toBe('img');
+
+    fireEvent.click(firstVault);
   });
 
   it('unswitches all button on vault click', () => {

@@ -6,26 +6,26 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="MuiPaper-root MuiCard-root makeStyles-cardRoot-2 MuiPaper-elevation1 MuiPaper-rounded"
+        class="MuiPaper-root MuiCard-root makeStyles-cardRoot-1 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
-          class="MuiCardContent-root makeStyles-content-3"
+          class="MuiCardContent-root makeStyles-content-2"
         >
           <p
-            class="MuiTypography-root makeStyles-cardSubheading4-9 MuiTypography-body1"
+            class="MuiTypography-root makeStyles-cardSubheading4-8 MuiTypography-body1"
           >
             Asset Allocation
           </p>
           <p
-            class="MuiTypography-root makeStyles-cardSubheading2-7 MuiTypography-body1 MuiTypography-colorTextSecondary"
+            class="MuiTypography-root makeStyles-cardSubheading2-6 MuiTypography-body1 MuiTypography-colorTextSecondary"
           >
             Subtext
           </p>
           <div
-            class="MuiBox-root MuiBox-root-10"
+            class="MuiBox-root MuiBox-root-15"
           >
             <div
-              class="MuiBox-root MuiBox-root-11"
+              class="MuiBox-root MuiBox-root-16"
             >
               <div
                 class="recharts-wrapper"
@@ -93,7 +93,7 @@ Object {
               </div>
             </div>
             <div
-              class="MuiBox-root MuiBox-root-12"
+              class="MuiBox-root MuiBox-root-17"
             >
               <ul
                 class="MuiList-root MuiList-padding"
@@ -115,12 +115,12 @@ Object {
                     class="MuiListItemText-root MuiListItemText-multiline"
                   >
                     <span
-                      class="MuiTypography-root makeStyles-cardSubheading4-9 MuiTypography-body1 MuiTypography-displayBlock"
+                      class="MuiTypography-root makeStyles-cardSubheading4-8 MuiTypography-body1 MuiTypography-displayBlock"
                     >
                       DIGG
                     </span>
                     <p
-                      class="MuiTypography-root makeStyles-cardSubheading2-7 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                      class="MuiTypography-root makeStyles-cardSubheading2-6 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
                     >
                       61.94%
                     </p>
@@ -143,12 +143,12 @@ Object {
                     class="MuiListItemText-root MuiListItemText-multiline"
                   >
                     <span
-                      class="MuiTypography-root makeStyles-cardSubheading4-9 MuiTypography-body1 MuiTypography-displayBlock"
+                      class="MuiTypography-root makeStyles-cardSubheading4-8 MuiTypography-body1 MuiTypography-displayBlock"
                     >
                       crvsBTC
                     </span>
                     <p
-                      class="MuiTypography-root makeStyles-cardSubheading2-7 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                      class="MuiTypography-root makeStyles-cardSubheading2-6 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
                     >
                       12.36%
                     </p>
@@ -171,12 +171,12 @@ Object {
                     class="MuiListItemText-root MuiListItemText-multiline"
                   >
                     <span
-                      class="MuiTypography-root makeStyles-cardSubheading4-9 MuiTypography-body1 MuiTypography-displayBlock"
+                      class="MuiTypography-root makeStyles-cardSubheading4-8 MuiTypography-body1 MuiTypography-displayBlock"
                     >
                       SLP-DIGG-WBTC
                     </span>
                     <p
-                      class="MuiTypography-root makeStyles-cardSubheading2-7 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                      class="MuiTypography-root makeStyles-cardSubheading2-6 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
                     >
                       8.22%
                     </p>
@@ -199,12 +199,12 @@ Object {
                     class="MuiListItemText-root MuiListItemText-multiline"
                   >
                     <span
-                      class="MuiTypography-root makeStyles-cardSubheading4-9 MuiTypography-body1 MuiTypography-displayBlock"
+                      class="MuiTypography-root makeStyles-cardSubheading4-8 MuiTypography-body1 MuiTypography-displayBlock"
                     >
                       crvtBTC
                     </span>
                     <p
-                      class="MuiTypography-root makeStyles-cardSubheading2-7 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                      class="MuiTypography-root makeStyles-cardSubheading2-6 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
                     >
                       6.39%
                     </p>
@@ -218,19 +218,19 @@ Object {
                     class="MuiListItemAvatar-root"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-13 makeStyles-otherAvatar-1"
+                      class="MuiBox-root MuiBox-root-18 makeStyles-avatarBig-14"
                     />
                   </div>
                   <div
                     class="MuiListItemText-root MuiListItemText-multiline"
                   >
                     <span
-                      class="MuiTypography-root makeStyles-cardSubheading4-9 MuiTypography-body1 MuiTypography-displayBlock"
+                      class="MuiTypography-root makeStyles-cardSubheading4-8 MuiTypography-body1 MuiTypography-displayBlock"
                     >
                       Other
                     </span>
                     <p
-                      class="MuiTypography-root makeStyles-cardSubheading2-7 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                      class="MuiTypography-root makeStyles-cardSubheading2-6 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
                     >
                       11.09%
                     </p>
@@ -245,26 +245,26 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-2 MuiPaper-elevation1 MuiPaper-rounded"
+      class="MuiPaper-root MuiCard-root makeStyles-cardRoot-1 MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        class="MuiCardContent-root makeStyles-content-3"
+        class="MuiCardContent-root makeStyles-content-2"
       >
         <p
-          class="MuiTypography-root makeStyles-cardSubheading4-9 MuiTypography-body1"
+          class="MuiTypography-root makeStyles-cardSubheading4-8 MuiTypography-body1"
         >
           Asset Allocation
         </p>
         <p
-          class="MuiTypography-root makeStyles-cardSubheading2-7 MuiTypography-body1 MuiTypography-colorTextSecondary"
+          class="MuiTypography-root makeStyles-cardSubheading2-6 MuiTypography-body1 MuiTypography-colorTextSecondary"
         >
           Subtext
         </p>
         <div
-          class="MuiBox-root MuiBox-root-10"
+          class="MuiBox-root MuiBox-root-15"
         >
           <div
-            class="MuiBox-root MuiBox-root-11"
+            class="MuiBox-root MuiBox-root-16"
           >
             <div
               class="recharts-wrapper"
@@ -332,7 +332,7 @@ Object {
             </div>
           </div>
           <div
-            class="MuiBox-root MuiBox-root-12"
+            class="MuiBox-root MuiBox-root-17"
           >
             <ul
               class="MuiList-root MuiList-padding"
@@ -354,12 +354,12 @@ Object {
                   class="MuiListItemText-root MuiListItemText-multiline"
                 >
                   <span
-                    class="MuiTypography-root makeStyles-cardSubheading4-9 MuiTypography-body1 MuiTypography-displayBlock"
+                    class="MuiTypography-root makeStyles-cardSubheading4-8 MuiTypography-body1 MuiTypography-displayBlock"
                   >
                     DIGG
                   </span>
                   <p
-                    class="MuiTypography-root makeStyles-cardSubheading2-7 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    class="MuiTypography-root makeStyles-cardSubheading2-6 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
                   >
                     61.94%
                   </p>
@@ -382,12 +382,12 @@ Object {
                   class="MuiListItemText-root MuiListItemText-multiline"
                 >
                   <span
-                    class="MuiTypography-root makeStyles-cardSubheading4-9 MuiTypography-body1 MuiTypography-displayBlock"
+                    class="MuiTypography-root makeStyles-cardSubheading4-8 MuiTypography-body1 MuiTypography-displayBlock"
                   >
                     crvsBTC
                   </span>
                   <p
-                    class="MuiTypography-root makeStyles-cardSubheading2-7 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    class="MuiTypography-root makeStyles-cardSubheading2-6 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
                   >
                     12.36%
                   </p>
@@ -410,12 +410,12 @@ Object {
                   class="MuiListItemText-root MuiListItemText-multiline"
                 >
                   <span
-                    class="MuiTypography-root makeStyles-cardSubheading4-9 MuiTypography-body1 MuiTypography-displayBlock"
+                    class="MuiTypography-root makeStyles-cardSubheading4-8 MuiTypography-body1 MuiTypography-displayBlock"
                   >
                     SLP-DIGG-WBTC
                   </span>
                   <p
-                    class="MuiTypography-root makeStyles-cardSubheading2-7 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    class="MuiTypography-root makeStyles-cardSubheading2-6 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
                   >
                     8.22%
                   </p>
@@ -438,12 +438,12 @@ Object {
                   class="MuiListItemText-root MuiListItemText-multiline"
                 >
                   <span
-                    class="MuiTypography-root makeStyles-cardSubheading4-9 MuiTypography-body1 MuiTypography-displayBlock"
+                    class="MuiTypography-root makeStyles-cardSubheading4-8 MuiTypography-body1 MuiTypography-displayBlock"
                   >
                     crvtBTC
                   </span>
                   <p
-                    class="MuiTypography-root makeStyles-cardSubheading2-7 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    class="MuiTypography-root makeStyles-cardSubheading2-6 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
                   >
                     6.39%
                   </p>
@@ -457,19 +457,19 @@ Object {
                   class="MuiListItemAvatar-root"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-13 makeStyles-otherAvatar-1"
+                    class="MuiBox-root MuiBox-root-18 makeStyles-avatarBig-14"
                   />
                 </div>
                 <div
                   class="MuiListItemText-root MuiListItemText-multiline"
                 >
                   <span
-                    class="MuiTypography-root makeStyles-cardSubheading4-9 MuiTypography-body1 MuiTypography-displayBlock"
+                    class="MuiTypography-root makeStyles-cardSubheading4-8 MuiTypography-body1 MuiTypography-displayBlock"
                   >
                     Other
                   </span>
                   <p
-                    class="MuiTypography-root makeStyles-cardSubheading2-7 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    class="MuiTypography-root makeStyles-cardSubheading2-6 MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
                   >
                     11.09%
                   </p>

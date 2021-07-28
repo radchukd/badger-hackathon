@@ -4,13 +4,18 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import { RootStore, StoreProvider } from '../../mobx/store';
+import { AccountStore } from '../../mobx/accountStore';
+import { PortfolioStore } from '../../mobx/portfolioStore';
+import { RootStore, StoreProvider } from '../../mobx/rootStore';
 import BoostCard from '../BoostCard';
 import testAccount from './testAccount.json';
 
 describe('BoostCard', () => {
-  const store = new RootStore({ preload: false });
-  store.account = testAccount;
+  const rootStore = new RootStore();
+  const accountStore = new AccountStore({ preload: false });
+  const portfolioStore = new PortfolioStore();
+  const store = { rootStore, accountStore, portfolioStore };
+  accountStore.account = testAccount;
 
   it('renders correctly', () => {
     const tree = render(

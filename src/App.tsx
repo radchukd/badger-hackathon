@@ -1,7 +1,9 @@
-import React from 'react';
 import { MobxRouter } from 'mobx-router';
+import React from 'react';
+
 import { makeStyles } from '@material-ui/core';
-import store from './mobx/store';
+
+import { rootStore } from './mobx/rootStore';
 
 const useStyles = makeStyles((theme) => ({
   appContainer: {
@@ -15,9 +17,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function App(): JSX.Element {
   const classes = useStyles();
+
   return (
     <div className={classes.appContainer}>
-      <MobxRouter store={store} />
+      <MobxRouter store={rootStore} />
     </div>
   );
 }

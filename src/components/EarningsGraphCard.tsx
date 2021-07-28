@@ -16,8 +16,9 @@ import {
 } from '@material-ui/core';
 import { Cached, ExpandMore, FiberManualRecord } from '@material-ui/icons';
 
-import { StoreContext } from '../mobx/store';
+import { StoreContext } from '../mobx/rootStore';
 import useCardStyles from '../styles/cardStyles';
+import useGlobalStyles from '../styles/globalStyles';
 import { formatNumber } from '../utils/numberUtils';
 import VaultSelector from './VaultSelector';
 
@@ -43,9 +44,6 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(1),
     fontSize: '14px',
     fill: '#444444',
-  },
-  boxGap: {
-    gap: theme.spacing(2),
   },
   assetIcon: {
     fontSize: '8px',
@@ -97,35 +95,18 @@ const data = [
   },
 ];
 
-const vaults = [
-  [
-    { icon: 'DIGG-WBTC.png', value: 'wBTC/Digg', labels: ['UNI'] },
-    { icon: 'BADGER-WBTC.png', value: 'Badger/wBTC', labels: ['UNI'] },
-  ],
-  [
-    { icon: 'SLP-DIGG-WBTC.png', value: 'Wrapped BTC/Digg', labels: ['SUSHI'] },
-    { icon: 'SLP-BADGER-WBTC.png', value: 'Wrapped BTC/Badger', labels: ['SUSHI'] },
-    { icon: 'SLP-WBTC-ETH.png', value: 'Wrapped BTC/Wrapped Ether', labels: ['SUSHI'] },
-  ],
-  [
-    { icon: 'UNI-WBTC-DIGG.png', value: 'crvRenWBTC', labels: ['CURVE'] },
-    { icon: 'UNI-WBTC-DIGG.png', value: 'renBTC/wBTC/sBTC', labels: ['CURVE'] },
-    { icon: 'UNI-WBTC-DIGG.png', value: 'tBTC/sBTCCrv LP', labels: ['CURVE'] },
-    { icon: 'UNI-WBTC-DIGG.png', value: 'crvRenWBTC', labels: ['CURVE', 'HARVEST'] },
-  ],
-];
-
 type GraphPeriod = '1D' | '1W' | '1M' | '1Y' | 'All Time';
 
 const graphPeriods: Array<GraphPeriod> = ['1D', '1W', '1M', '1Y', 'All Time'];
 
 const EarningsGraphCard = observer(() => {
-  const classes = { ...useStyles(), ...useCardStyles() };
+  const classes = { ...useStyles(), ...useCardStyles(), ...useGlobalStyles() };
   const isMobile = useMediaQuery('(max-width: 767px)');
   const store = React.useContext(StoreContext);
-  const { account /* , vaults */, earnedBadger } = store;
+  const {
+    accountStore: { account, lastUpdate, earnedBadger },
+  } = store;
   const [vaultsMenuAnchor, setVaultsMenuAnchor] = React.useState<HTMLElement | null>(null);
-  const [selectedVaults, setSelectedVaults] = React.useState<Array<string>>(vaults.flat().map((vault) => vault.value));
   const [graphPeriod, setGraphPeriod] = React.useState<GraphPeriod>('1W');
 
   return (
@@ -171,23 +152,7 @@ const EarningsGraphCard = observer(() => {
               placement="bottom-start"
               keepMounted
             >
-              <VaultSelector
-                vaults={vaults}
-                onClose={() => setVaultsMenuAnchor(null)}
-                onAllClick={() => {
-                  if (selectedVaults.length === vaults.flat().length) setSelectedVaults([]);
-                  else setSelectedVaults(vaults.flat().map((vault) => vault.value));
-                }}
-                isAllChecked={selectedVaults.length === vaults.flat().length}
-                onItemClick={(item: string) => {
-                  setSelectedVaults((selectedVaults) =>
-                    selectedVaults?.includes(item)
-                      ? selectedVaults.filter((vault) => vault != item)
-                      : [...selectedVaults, item],
-                  );
-                }}
-                isItemChecked={(item: string) => selectedVaults.includes(item)}
-              />
+              <VaultSelector onClose={() => setVaultsMenuAnchor(null)} />
             </Popper>
           </Box>
           <Box display="flex" flexDirection="column" alignItems={isMobile ? 'center' : 'flex-end'}>
@@ -258,7 +223,7 @@ const EarningsGraphCard = observer(() => {
             <Box display="flex" alignItems="center">
               <Cached className={classes.refreshIcon} />
               <Box className={classes.cardSubheading2} color="text.secondary">
-                Data as of {new Date().toLocaleString('en-US')}
+                {lastUpdate?.toLocaleString('en-US')}
               </Box>
             </Box>
           </Box>
