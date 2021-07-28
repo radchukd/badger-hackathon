@@ -345,11 +345,11 @@ Object {
               tabindex="0"
             >
               <div
-                class="MuiBox-root MuiBox-root-57"
+                class="MuiListItemIcon-root makeStyles-vaultIcon-55"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-colorSecondary"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -359,7 +359,7 @@ Object {
                 </svg>
               </div>
               <div
-                class="MuiBox-root MuiBox-root-58 makeStyles-vaultName-55"
+                class="MuiBox-root MuiBox-root-57"
               >
                 wBTC/Digg
               </div>
@@ -384,11 +384,11 @@ Object {
               tabindex="0"
             >
               <div
-                class="MuiBox-root MuiBox-root-59"
+                class="MuiListItemIcon-root makeStyles-vaultIcon-55"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-colorSecondary"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -398,7 +398,7 @@ Object {
                 </svg>
               </div>
               <div
-                class="MuiBox-root MuiBox-root-60 makeStyles-vaultName-55"
+                class="MuiBox-root MuiBox-root-58"
               >
                 Badger/wBTC
               </div>
@@ -417,7 +417,7 @@ Object {
             </div>
           </div>
           <div
-            class="MuiBox-root MuiBox-root-61"
+            class="MuiBox-root MuiBox-root-59"
           >
             <div
               aria-disabled="false"
@@ -427,11 +427,11 @@ Object {
               tabindex="0"
             >
               <div
-                class="MuiBox-root MuiBox-root-62"
+                class="MuiListItemIcon-root makeStyles-vaultIcon-55"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-colorSecondary"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -441,7 +441,7 @@ Object {
                 </svg>
               </div>
               <div
-                class="MuiBox-root MuiBox-root-63 makeStyles-vaultName-55"
+                class="MuiBox-root MuiBox-root-60"
               >
                 Wrapped BTC/Digg
               </div>
@@ -466,11 +466,11 @@ Object {
               tabindex="0"
             >
               <div
-                class="MuiBox-root MuiBox-root-64"
+                class="MuiListItemIcon-root makeStyles-vaultIcon-55"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-colorSecondary"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -480,7 +480,7 @@ Object {
                 </svg>
               </div>
               <div
-                class="MuiBox-root MuiBox-root-65 makeStyles-vaultName-55"
+                class="MuiBox-root MuiBox-root-61"
               >
                 Wrapped BTC/Badger
               </div>
@@ -505,11 +505,11 @@ Object {
               tabindex="0"
             >
               <div
-                class="MuiBox-root MuiBox-root-66"
+                class="MuiListItemIcon-root makeStyles-vaultIcon-55"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-colorSecondary"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -519,7 +519,7 @@ Object {
                 </svg>
               </div>
               <div
-                class="MuiBox-root MuiBox-root-67 makeStyles-vaultName-55"
+                class="MuiBox-root MuiBox-root-62"
               >
                 Wrapped BTC/Wrapped Ether
               </div>
@@ -538,7 +538,7 @@ Object {
             </div>
           </div>
           <div
-            class="MuiBox-root MuiBox-root-68"
+            class="MuiBox-root MuiBox-root-63"
           >
             <div
               aria-disabled="false"
@@ -548,11 +548,11 @@ Object {
               tabindex="0"
             >
               <div
-                class="MuiBox-root MuiBox-root-69"
+                class="MuiListItemIcon-root makeStyles-vaultIcon-55"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-colorSecondary"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -562,7 +562,7 @@ Object {
                 </svg>
               </div>
               <div
-                class="MuiBox-root MuiBox-root-70 makeStyles-vaultName-55"
+                class="MuiBox-root MuiBox-root-64"
               >
                 crvRenWBTC
               </div>
@@ -587,11 +587,11 @@ Object {
               tabindex="0"
             >
               <div
-                class="MuiBox-root MuiBox-root-71"
+                class="MuiListItemIcon-root makeStyles-vaultIcon-55"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-colorSecondary"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -601,7 +601,7 @@ Object {
                 </svg>
               </div>
               <div
-                class="MuiBox-root MuiBox-root-72 makeStyles-vaultName-55"
+                class="MuiBox-root MuiBox-root-65"
               >
                 renBTC/wBTC/sBTC
               </div>
@@ -626,11 +626,11 @@ Object {
               tabindex="0"
             >
               <div
-                class="MuiBox-root MuiBox-root-73"
+                class="MuiListItemIcon-root makeStyles-vaultIcon-55"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-colorSecondary"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -640,7 +640,7 @@ Object {
                 </svg>
               </div>
               <div
-                class="MuiBox-root MuiBox-root-74 makeStyles-vaultName-55"
+                class="MuiBox-root MuiBox-root-66"
               >
                 tBTC/sBTCCrv LP
               </div>
@@ -665,11 +665,11 @@ Object {
               tabindex="0"
             >
               <div
-                class="MuiBox-root MuiBox-root-75"
+                class="MuiListItemIcon-root makeStyles-vaultIcon-55"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-colorSecondary"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -679,7 +679,7 @@ Object {
                 </svg>
               </div>
               <div
-                class="MuiBox-root MuiBox-root-76 makeStyles-vaultName-55"
+                class="MuiBox-root MuiBox-root-67"
               >
                 crvRenWBTC
               </div>

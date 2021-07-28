@@ -70,7 +70,7 @@ Object {
                     value="Tokens"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-30"
+                      class="MuiBox-root MuiBox-root-31"
                     >
                       Tokens
                     </div>
@@ -81,7 +81,7 @@ Object {
                     value="Portfolio % Alloc."
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-31"
+                      class="MuiBox-root MuiBox-root-32"
                     >
                       Portfolio % Alloc.
                     </div>
@@ -92,7 +92,7 @@ Object {
                     value="Price"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-32"
+                      class="MuiBox-root MuiBox-root-33"
                     >
                       Price
                     </div>
@@ -103,7 +103,7 @@ Object {
                     value="Balance"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-33"
+                      class="MuiBox-root MuiBox-root-34"
                     >
                       Balance
                     </div>
@@ -120,15 +120,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-34"
+                      class="MuiBox-root MuiBox-root-35"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-35 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-36 makeStyles-cellHeading-29"
                       >
                         BADGER
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-36 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-37 makeStyles-cellSubheading-30"
                       >
                         $9,049.19
                       </div>
@@ -138,7 +138,7 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-37"
+                      class="MuiBox-root MuiBox-root-38"
                     >
                       1.86%
                     </div>
@@ -147,15 +147,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-38"
+                      class="MuiBox-root MuiBox-root-39"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-39 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-40 makeStyles-cellHeading-29"
                       >
                         $7.54
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-40 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-41 makeStyles-cellSubheading-30"
                       >
                         0 BTC
                       </div>
@@ -165,15 +165,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-41"
+                      class="MuiBox-root MuiBox-root-42"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-42 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-43 makeStyles-cellHeading-29"
                       >
                         $1,200.16
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-43 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-44 makeStyles-cellSubheading-30"
                       >
                         $9,049.19
                       </div>
@@ -187,15 +187,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-44"
+                      class="MuiBox-root MuiBox-root-45"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-45 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-46 makeStyles-cellHeading-29"
                       >
                         cvxCRV
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-46 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-47 makeStyles-cellSubheading-30"
                       >
                         $551.98
                       </div>
@@ -205,7 +205,7 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-47"
+                      class="MuiBox-root MuiBox-root-48"
                     >
                       0.11%
                     </div>
@@ -214,15 +214,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-48"
+                      class="MuiBox-root MuiBox-root-49"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-49 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-50 makeStyles-cellHeading-29"
                       >
                         $1.31
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-50 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-51 makeStyles-cellSubheading-30"
                       >
                         0 BTC
                       </div>
@@ -232,15 +232,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-51"
+                      class="MuiBox-root MuiBox-root-52"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-52 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-53 makeStyles-cellHeading-29"
                       >
                         $421.36
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-53 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-54 makeStyles-cellSubheading-30"
                       >
                         $551.98
                       </div>
@@ -254,15 +254,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-54"
+                      class="MuiBox-root MuiBox-root-55"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-55 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-56 makeStyles-cellHeading-29"
                       >
                         WBTC
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-56 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-57 makeStyles-cellSubheading-30"
                       >
                         $17,441.39
                       </div>
@@ -272,7 +272,7 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-57"
+                      class="MuiBox-root MuiBox-root-58"
                     >
                       3.59%
                     </div>
@@ -281,15 +281,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-58"
+                      class="MuiBox-root MuiBox-root-59"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-59 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-60 makeStyles-cellHeading-29"
                       >
                         $31,434.00
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-60 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-61 makeStyles-cellSubheading-30"
                       >
                         0 BTC
                       </div>
@@ -299,15 +299,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-61"
+                      class="MuiBox-root MuiBox-root-62"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-62 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-63 makeStyles-cellHeading-29"
                       >
                         $0.55
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-63 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-64 makeStyles-cellSubheading-30"
                       >
                         $17,441.39
                       </div>
@@ -321,15 +321,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-64"
+                      class="MuiBox-root MuiBox-root-65"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-65 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-66 makeStyles-cellHeading-29"
                       >
                         CVX
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-66 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-67 makeStyles-cellSubheading-30"
                       >
                         $422.63
                       </div>
@@ -339,7 +339,7 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-67"
+                      class="MuiBox-root MuiBox-root-68"
                     >
                       0.09%
                     </div>
@@ -348,15 +348,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-68"
+                      class="MuiBox-root MuiBox-root-69"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-69 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-70 makeStyles-cellHeading-29"
                       >
                         $2.23
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-70 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-71 makeStyles-cellSubheading-30"
                       >
                         0 BTC
                       </div>
@@ -366,15 +366,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-71"
+                      class="MuiBox-root MuiBox-root-72"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-72 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-73 makeStyles-cellHeading-29"
                       >
                         $189.52
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-73 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-74 makeStyles-cellSubheading-30"
                       >
                         $422.63
                       </div>
@@ -388,15 +388,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-74"
+                      class="MuiBox-root MuiBox-root-75"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-75 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-76 makeStyles-cellHeading-29"
                       >
                         crvpBTC
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-76 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-77 makeStyles-cellSubheading-30"
                       >
                         $63,610.74
                       </div>
@@ -406,7 +406,7 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-77"
+                      class="MuiBox-root MuiBox-root-78"
                     >
                       13.09%
                     </div>
@@ -415,15 +415,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-78"
+                      class="MuiBox-root MuiBox-root-79"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-79 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-80 makeStyles-cellHeading-29"
                       >
                         $31,988.18
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-80 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-81 makeStyles-cellSubheading-30"
                       >
                         0 BTC
                       </div>
@@ -433,15 +433,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-81"
+                      class="MuiBox-root MuiBox-root-82"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-82 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-83 makeStyles-cellHeading-29"
                       >
                         $1.99
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-83 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-84 makeStyles-cellSubheading-30"
                       >
                         $63,610.74
                       </div>
@@ -455,15 +455,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-84"
+                      class="MuiBox-root MuiBox-root-85"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-85 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-86 makeStyles-cellHeading-29"
                       >
                         SLP-WBTC-ETH
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-86 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-87 makeStyles-cellSubheading-30"
                       >
                         $0.00
                       </div>
@@ -473,7 +473,7 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-87"
+                      class="MuiBox-root MuiBox-root-88"
                     >
                       0%
                     </div>
@@ -482,15 +482,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-88"
+                      class="MuiBox-root MuiBox-root-89"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-89 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-90 makeStyles-cellHeading-29"
                       >
                         $0.00
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-90 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-91 makeStyles-cellSubheading-30"
                       >
                         0 BTC
                       </div>
@@ -500,15 +500,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-91"
+                      class="MuiBox-root MuiBox-root-92"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-92 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-93 makeStyles-cellHeading-29"
                       >
                         $0.00
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-93 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-94 makeStyles-cellSubheading-30"
                       >
                         $0.00
                       </div>
@@ -522,15 +522,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-94"
+                      class="MuiBox-root MuiBox-root-95"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-95 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-96 makeStyles-cellHeading-29"
                       >
                         DIGG
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-96 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-97 makeStyles-cellSubheading-30"
                       >
                         $1,416.64
                       </div>
@@ -540,7 +540,7 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-97"
+                      class="MuiBox-root MuiBox-root-98"
                     >
                       0.29%
                     </div>
@@ -549,15 +549,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-98"
+                      class="MuiBox-root MuiBox-root-99"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-99 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-100 makeStyles-cellHeading-29"
                       >
                         $32,744.40
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-100 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-101 makeStyles-cellSubheading-30"
                       >
                         0 BTC
                       </div>
@@ -567,15 +567,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-101"
+                      class="MuiBox-root MuiBox-root-102"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-102 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-103 makeStyles-cellHeading-29"
                       >
                         $0.04
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-103 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-104 makeStyles-cellSubheading-30"
                       >
                         $1,416.64
                       </div>
@@ -589,15 +589,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-104"
+                      class="MuiBox-root MuiBox-root-105"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-105 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-106 makeStyles-cellHeading-29"
                       >
                         SLP-DIGG-WBTC
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-106 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-107 makeStyles-cellSubheading-30"
                       >
                         $0.00
                       </div>
@@ -605,26 +605,26 @@ Object {
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
-                  >
-                    <div
-                      class="MuiBox-root MuiBox-root-107"
-                    >
-                      0%
-                    </div>
-                  </td>
-                  <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
                       class="MuiBox-root MuiBox-root-108"
                     >
+                      0%
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                  >
+                    <div
+                      class="MuiBox-root MuiBox-root-109"
+                    >
                       <div
-                        class="MuiBox-root MuiBox-root-109 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-110 makeStyles-cellHeading-29"
                       >
                         $0.00
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-110 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-111 makeStyles-cellSubheading-30"
                       >
                         0 BTC
                       </div>
@@ -634,15 +634,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-111"
+                      class="MuiBox-root MuiBox-root-112"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-112 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-113 makeStyles-cellHeading-29"
                       >
                         $0.00
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-113 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-114 makeStyles-cellSubheading-30"
                       >
                         $0.00
                       </div>
@@ -656,15 +656,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-114"
+                      class="MuiBox-root MuiBox-root-115"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-115 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-116 makeStyles-cellHeading-29"
                       >
                         SLP-IBBTC-WBTC
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-116 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-117 makeStyles-cellSubheading-30"
                       >
                         $0.00
                       </div>
@@ -674,7 +674,7 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-117"
+                      class="MuiBox-root MuiBox-root-118"
                     >
                       0%
                     </div>
@@ -683,15 +683,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-118"
+                      class="MuiBox-root MuiBox-root-119"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-119 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-120 makeStyles-cellHeading-29"
                       >
                         $0.00
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-120 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-121 makeStyles-cellSubheading-30"
                       >
                         0 BTC
                       </div>
@@ -701,15 +701,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-121"
+                      class="MuiBox-root MuiBox-root-122"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-122 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-123 makeStyles-cellHeading-29"
                       >
                         $0.00
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-123 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-124 makeStyles-cellSubheading-30"
                       >
                         $0.00
                       </div>
@@ -723,15 +723,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-124"
+                      class="MuiBox-root MuiBox-root-125"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-125 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-126 makeStyles-cellHeading-29"
                       >
                         crvhBTC
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-126 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-127 makeStyles-cellSubheading-30"
                       >
                         $63,348.21
                       </div>
@@ -741,7 +741,7 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-127"
+                      class="MuiBox-root MuiBox-root-128"
                     >
                       13.04%
                     </div>
@@ -750,15 +750,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-128"
+                      class="MuiBox-root MuiBox-root-129"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-129 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-130 makeStyles-cellHeading-29"
                       >
                         $31,880.01
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-130 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-131 makeStyles-cellSubheading-30"
                       >
                         0 BTC
                       </div>
@@ -768,15 +768,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-131"
+                      class="MuiBox-root MuiBox-root-132"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-132 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-133 makeStyles-cellHeading-29"
                       >
                         $1.99
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-133 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-134 makeStyles-cellSubheading-30"
                       >
                         $63,348.21
                       </div>
@@ -790,15 +790,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-134"
+                      class="MuiBox-root MuiBox-root-135"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-135 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-136 makeStyles-cellHeading-29"
                       >
                         crvtBTC
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-136 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-137 makeStyles-cellSubheading-30"
                       >
                         $0.00
                       </div>
@@ -808,7 +808,7 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-137"
+                      class="MuiBox-root MuiBox-root-138"
                     >
                       0%
                     </div>
@@ -817,15 +817,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-138"
+                      class="MuiBox-root MuiBox-root-139"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-139 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-140 makeStyles-cellHeading-29"
                       >
                         $0.00
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-140 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-141 makeStyles-cellSubheading-30"
                       >
                         0 BTC
                       </div>
@@ -835,15 +835,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-141"
+                      class="MuiBox-root MuiBox-root-142"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-142 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-143 makeStyles-cellHeading-29"
                       >
                         $0.00
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-143 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-144 makeStyles-cellSubheading-30"
                       >
                         $0.00
                       </div>
@@ -857,15 +857,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-144"
+                      class="MuiBox-root MuiBox-root-145"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-145 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-146 makeStyles-cellHeading-29"
                       >
                         crvTricrypto
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-146 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-147 makeStyles-cellSubheading-30"
                       >
                         $330,141.91
                       </div>
@@ -875,7 +875,7 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-147"
+                      class="MuiBox-root MuiBox-root-148"
                     >
                       67.93%
                     </div>
@@ -884,15 +884,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-148"
+                      class="MuiBox-root MuiBox-root-149"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-149 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-150 makeStyles-cellHeading-29"
                       >
                         $1,183.03
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-150 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-151 makeStyles-cellSubheading-30"
                       >
                         0 BTC
                       </div>
@@ -902,15 +902,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-151"
+                      class="MuiBox-root MuiBox-root-152"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-152 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-153 makeStyles-cellHeading-29"
                       >
                         $279.06
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-153 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-154 makeStyles-cellSubheading-30"
                       >
                         $330,141.91
                       </div>
@@ -924,15 +924,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-154"
+                      class="MuiBox-root MuiBox-root-155"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-155 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-156 makeStyles-cellHeading-29"
                       >
                         crvsBTC
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-156 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-157 makeStyles-cellSubheading-30"
                       >
                         $0.00
                       </div>
@@ -942,7 +942,7 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-157"
+                      class="MuiBox-root MuiBox-root-158"
                     >
                       0%
                     </div>
@@ -951,15 +951,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-158"
+                      class="MuiBox-root MuiBox-root-159"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-159 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-160 makeStyles-cellHeading-29"
                       >
                         $0.00
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-160 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-161 makeStyles-cellSubheading-30"
                       >
                         0 BTC
                       </div>
@@ -969,15 +969,15 @@ Object {
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-161"
+                      class="MuiBox-root MuiBox-root-162"
                     >
                       <div
-                        class="MuiBox-root MuiBox-root-162 makeStyles-cellHeading-28"
+                        class="MuiBox-root MuiBox-root-163 makeStyles-cellHeading-29"
                       >
                         $0.00
                       </div>
                       <div
-                        class="MuiBox-root MuiBox-root-163 makeStyles-cellSubheading-29"
+                        class="MuiBox-root MuiBox-root-164 makeStyles-cellSubheading-30"
                       >
                         $0.00
                       </div>
@@ -1057,7 +1057,7 @@ Object {
                   value="Tokens"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-30"
+                    class="MuiBox-root MuiBox-root-31"
                   >
                     Tokens
                   </div>
@@ -1068,7 +1068,7 @@ Object {
                   value="Portfolio % Alloc."
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-31"
+                    class="MuiBox-root MuiBox-root-32"
                   >
                     Portfolio % Alloc.
                   </div>
@@ -1079,7 +1079,7 @@ Object {
                   value="Price"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-32"
+                    class="MuiBox-root MuiBox-root-33"
                   >
                     Price
                   </div>
@@ -1090,7 +1090,7 @@ Object {
                   value="Balance"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-33"
+                    class="MuiBox-root MuiBox-root-34"
                   >
                     Balance
                   </div>
@@ -1107,15 +1107,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-34"
+                    class="MuiBox-root MuiBox-root-35"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-35 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-36 makeStyles-cellHeading-29"
                     >
                       BADGER
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-36 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-37 makeStyles-cellSubheading-30"
                     >
                       $9,049.19
                     </div>
@@ -1125,7 +1125,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-37"
+                    class="MuiBox-root MuiBox-root-38"
                   >
                     1.86%
                   </div>
@@ -1134,15 +1134,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-38"
+                    class="MuiBox-root MuiBox-root-39"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-39 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-40 makeStyles-cellHeading-29"
                     >
                       $7.54
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-40 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-41 makeStyles-cellSubheading-30"
                     >
                       0 BTC
                     </div>
@@ -1152,15 +1152,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-41"
+                    class="MuiBox-root MuiBox-root-42"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-42 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-43 makeStyles-cellHeading-29"
                     >
                       $1,200.16
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-43 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-44 makeStyles-cellSubheading-30"
                     >
                       $9,049.19
                     </div>
@@ -1174,15 +1174,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-44"
+                    class="MuiBox-root MuiBox-root-45"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-45 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-46 makeStyles-cellHeading-29"
                     >
                       cvxCRV
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-46 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-47 makeStyles-cellSubheading-30"
                     >
                       $551.98
                     </div>
@@ -1192,7 +1192,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-47"
+                    class="MuiBox-root MuiBox-root-48"
                   >
                     0.11%
                   </div>
@@ -1201,15 +1201,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-48"
+                    class="MuiBox-root MuiBox-root-49"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-49 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-50 makeStyles-cellHeading-29"
                     >
                       $1.31
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-50 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-51 makeStyles-cellSubheading-30"
                     >
                       0 BTC
                     </div>
@@ -1219,15 +1219,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-51"
+                    class="MuiBox-root MuiBox-root-52"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-52 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-53 makeStyles-cellHeading-29"
                     >
                       $421.36
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-53 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-54 makeStyles-cellSubheading-30"
                     >
                       $551.98
                     </div>
@@ -1241,15 +1241,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-54"
+                    class="MuiBox-root MuiBox-root-55"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-55 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-56 makeStyles-cellHeading-29"
                     >
                       WBTC
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-56 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-57 makeStyles-cellSubheading-30"
                     >
                       $17,441.39
                     </div>
@@ -1259,7 +1259,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-57"
+                    class="MuiBox-root MuiBox-root-58"
                   >
                     3.59%
                   </div>
@@ -1268,15 +1268,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-58"
+                    class="MuiBox-root MuiBox-root-59"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-59 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-60 makeStyles-cellHeading-29"
                     >
                       $31,434.00
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-60 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-61 makeStyles-cellSubheading-30"
                     >
                       0 BTC
                     </div>
@@ -1286,15 +1286,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-61"
+                    class="MuiBox-root MuiBox-root-62"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-62 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-63 makeStyles-cellHeading-29"
                     >
                       $0.55
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-63 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-64 makeStyles-cellSubheading-30"
                     >
                       $17,441.39
                     </div>
@@ -1308,15 +1308,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-64"
+                    class="MuiBox-root MuiBox-root-65"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-65 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-66 makeStyles-cellHeading-29"
                     >
                       CVX
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-66 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-67 makeStyles-cellSubheading-30"
                     >
                       $422.63
                     </div>
@@ -1326,7 +1326,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-67"
+                    class="MuiBox-root MuiBox-root-68"
                   >
                     0.09%
                   </div>
@@ -1335,15 +1335,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-68"
+                    class="MuiBox-root MuiBox-root-69"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-69 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-70 makeStyles-cellHeading-29"
                     >
                       $2.23
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-70 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-71 makeStyles-cellSubheading-30"
                     >
                       0 BTC
                     </div>
@@ -1353,15 +1353,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-71"
+                    class="MuiBox-root MuiBox-root-72"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-72 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-73 makeStyles-cellHeading-29"
                     >
                       $189.52
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-73 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-74 makeStyles-cellSubheading-30"
                     >
                       $422.63
                     </div>
@@ -1375,15 +1375,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-74"
+                    class="MuiBox-root MuiBox-root-75"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-75 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-76 makeStyles-cellHeading-29"
                     >
                       crvpBTC
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-76 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-77 makeStyles-cellSubheading-30"
                     >
                       $63,610.74
                     </div>
@@ -1393,7 +1393,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-77"
+                    class="MuiBox-root MuiBox-root-78"
                   >
                     13.09%
                   </div>
@@ -1402,15 +1402,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-78"
+                    class="MuiBox-root MuiBox-root-79"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-79 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-80 makeStyles-cellHeading-29"
                     >
                       $31,988.18
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-80 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-81 makeStyles-cellSubheading-30"
                     >
                       0 BTC
                     </div>
@@ -1420,15 +1420,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-81"
+                    class="MuiBox-root MuiBox-root-82"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-82 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-83 makeStyles-cellHeading-29"
                     >
                       $1.99
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-83 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-84 makeStyles-cellSubheading-30"
                     >
                       $63,610.74
                     </div>
@@ -1442,15 +1442,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-84"
+                    class="MuiBox-root MuiBox-root-85"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-85 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-86 makeStyles-cellHeading-29"
                     >
                       SLP-WBTC-ETH
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-86 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-87 makeStyles-cellSubheading-30"
                     >
                       $0.00
                     </div>
@@ -1460,7 +1460,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-87"
+                    class="MuiBox-root MuiBox-root-88"
                   >
                     0%
                   </div>
@@ -1469,15 +1469,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-88"
+                    class="MuiBox-root MuiBox-root-89"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-89 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-90 makeStyles-cellHeading-29"
                     >
                       $0.00
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-90 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-91 makeStyles-cellSubheading-30"
                     >
                       0 BTC
                     </div>
@@ -1487,15 +1487,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-91"
+                    class="MuiBox-root MuiBox-root-92"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-92 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-93 makeStyles-cellHeading-29"
                     >
                       $0.00
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-93 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-94 makeStyles-cellSubheading-30"
                     >
                       $0.00
                     </div>
@@ -1509,15 +1509,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-94"
+                    class="MuiBox-root MuiBox-root-95"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-95 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-96 makeStyles-cellHeading-29"
                     >
                       DIGG
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-96 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-97 makeStyles-cellSubheading-30"
                     >
                       $1,416.64
                     </div>
@@ -1527,7 +1527,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-97"
+                    class="MuiBox-root MuiBox-root-98"
                   >
                     0.29%
                   </div>
@@ -1536,15 +1536,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-98"
+                    class="MuiBox-root MuiBox-root-99"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-99 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-100 makeStyles-cellHeading-29"
                     >
                       $32,744.40
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-100 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-101 makeStyles-cellSubheading-30"
                     >
                       0 BTC
                     </div>
@@ -1554,15 +1554,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-101"
+                    class="MuiBox-root MuiBox-root-102"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-102 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-103 makeStyles-cellHeading-29"
                     >
                       $0.04
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-103 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-104 makeStyles-cellSubheading-30"
                     >
                       $1,416.64
                     </div>
@@ -1576,15 +1576,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-104"
+                    class="MuiBox-root MuiBox-root-105"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-105 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-106 makeStyles-cellHeading-29"
                     >
                       SLP-DIGG-WBTC
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-106 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-107 makeStyles-cellSubheading-30"
                     >
                       $0.00
                     </div>
@@ -1592,26 +1592,26 @@ Object {
                 </td>
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
-                >
-                  <div
-                    class="MuiBox-root MuiBox-root-107"
-                  >
-                    0%
-                  </div>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
                     class="MuiBox-root MuiBox-root-108"
                   >
+                    0%
+                  </div>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-109"
+                  >
                     <div
-                      class="MuiBox-root MuiBox-root-109 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-110 makeStyles-cellHeading-29"
                     >
                       $0.00
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-110 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-111 makeStyles-cellSubheading-30"
                     >
                       0 BTC
                     </div>
@@ -1621,15 +1621,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-111"
+                    class="MuiBox-root MuiBox-root-112"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-112 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-113 makeStyles-cellHeading-29"
                     >
                       $0.00
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-113 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-114 makeStyles-cellSubheading-30"
                     >
                       $0.00
                     </div>
@@ -1643,15 +1643,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-114"
+                    class="MuiBox-root MuiBox-root-115"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-115 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-116 makeStyles-cellHeading-29"
                     >
                       SLP-IBBTC-WBTC
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-116 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-117 makeStyles-cellSubheading-30"
                     >
                       $0.00
                     </div>
@@ -1661,7 +1661,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-117"
+                    class="MuiBox-root MuiBox-root-118"
                   >
                     0%
                   </div>
@@ -1670,15 +1670,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-118"
+                    class="MuiBox-root MuiBox-root-119"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-119 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-120 makeStyles-cellHeading-29"
                     >
                       $0.00
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-120 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-121 makeStyles-cellSubheading-30"
                     >
                       0 BTC
                     </div>
@@ -1688,15 +1688,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-121"
+                    class="MuiBox-root MuiBox-root-122"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-122 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-123 makeStyles-cellHeading-29"
                     >
                       $0.00
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-123 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-124 makeStyles-cellSubheading-30"
                     >
                       $0.00
                     </div>
@@ -1710,15 +1710,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-124"
+                    class="MuiBox-root MuiBox-root-125"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-125 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-126 makeStyles-cellHeading-29"
                     >
                       crvhBTC
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-126 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-127 makeStyles-cellSubheading-30"
                     >
                       $63,348.21
                     </div>
@@ -1728,7 +1728,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-127"
+                    class="MuiBox-root MuiBox-root-128"
                   >
                     13.04%
                   </div>
@@ -1737,15 +1737,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-128"
+                    class="MuiBox-root MuiBox-root-129"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-129 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-130 makeStyles-cellHeading-29"
                     >
                       $31,880.01
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-130 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-131 makeStyles-cellSubheading-30"
                     >
                       0 BTC
                     </div>
@@ -1755,15 +1755,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-131"
+                    class="MuiBox-root MuiBox-root-132"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-132 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-133 makeStyles-cellHeading-29"
                     >
                       $1.99
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-133 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-134 makeStyles-cellSubheading-30"
                     >
                       $63,348.21
                     </div>
@@ -1777,15 +1777,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-134"
+                    class="MuiBox-root MuiBox-root-135"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-135 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-136 makeStyles-cellHeading-29"
                     >
                       crvtBTC
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-136 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-137 makeStyles-cellSubheading-30"
                     >
                       $0.00
                     </div>
@@ -1795,7 +1795,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-137"
+                    class="MuiBox-root MuiBox-root-138"
                   >
                     0%
                   </div>
@@ -1804,15 +1804,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-138"
+                    class="MuiBox-root MuiBox-root-139"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-139 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-140 makeStyles-cellHeading-29"
                     >
                       $0.00
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-140 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-141 makeStyles-cellSubheading-30"
                     >
                       0 BTC
                     </div>
@@ -1822,15 +1822,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-141"
+                    class="MuiBox-root MuiBox-root-142"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-142 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-143 makeStyles-cellHeading-29"
                     >
                       $0.00
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-143 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-144 makeStyles-cellSubheading-30"
                     >
                       $0.00
                     </div>
@@ -1844,15 +1844,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-144"
+                    class="MuiBox-root MuiBox-root-145"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-145 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-146 makeStyles-cellHeading-29"
                     >
                       crvTricrypto
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-146 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-147 makeStyles-cellSubheading-30"
                     >
                       $330,141.91
                     </div>
@@ -1862,7 +1862,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-147"
+                    class="MuiBox-root MuiBox-root-148"
                   >
                     67.93%
                   </div>
@@ -1871,15 +1871,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-148"
+                    class="MuiBox-root MuiBox-root-149"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-149 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-150 makeStyles-cellHeading-29"
                     >
                       $1,183.03
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-150 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-151 makeStyles-cellSubheading-30"
                     >
                       0 BTC
                     </div>
@@ -1889,15 +1889,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-151"
+                    class="MuiBox-root MuiBox-root-152"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-152 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-153 makeStyles-cellHeading-29"
                     >
                       $279.06
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-153 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-154 makeStyles-cellSubheading-30"
                     >
                       $330,141.91
                     </div>
@@ -1911,15 +1911,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-154"
+                    class="MuiBox-root MuiBox-root-155"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-155 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-156 makeStyles-cellHeading-29"
                     >
                       crvsBTC
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-156 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-157 makeStyles-cellSubheading-30"
                     >
                       $0.00
                     </div>
@@ -1929,7 +1929,7 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignCenter"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-157"
+                    class="MuiBox-root MuiBox-root-158"
                   >
                     0%
                   </div>
@@ -1938,15 +1938,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-158"
+                    class="MuiBox-root MuiBox-root-159"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-159 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-160 makeStyles-cellHeading-29"
                     >
                       $0.00
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-160 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-161 makeStyles-cellSubheading-30"
                     >
                       0 BTC
                     </div>
@@ -1956,15 +1956,15 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-161"
+                    class="MuiBox-root MuiBox-root-162"
                   >
                     <div
-                      class="MuiBox-root MuiBox-root-162 makeStyles-cellHeading-28"
+                      class="MuiBox-root MuiBox-root-163 makeStyles-cellHeading-29"
                     >
                       $0.00
                     </div>
                     <div
-                      class="MuiBox-root MuiBox-root-163 makeStyles-cellSubheading-29"
+                      class="MuiBox-root MuiBox-root-164 makeStyles-cellSubheading-30"
                     >
                       $0.00
                     </div>
