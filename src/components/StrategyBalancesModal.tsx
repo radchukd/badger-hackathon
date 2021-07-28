@@ -10,6 +10,9 @@ import Table from './Table';
 import VaultListItem from './VaultListItem';
 
 const useStyles = makeStyles((/* theme */) => ({
+  vaultItemWhite: {
+    color: '#ffffff',
+  },
   closeIcon: {
     color: '#cccccc',
   },
@@ -37,7 +40,7 @@ const StrategyBalancesModal: React.FC<IStrategyBalancesModal> = ({ onClose }) =>
         </IconButton>
       </Box>
       <Divider className={classes.divider} />
-      <Box mt={4} mb={2} className={classes.cardSubheading4}>
+      <Box mt={4} mb={2} ml={1} className={classes.cardSubheading4}>
         Vault Details
       </Box>
       <Box bgcolor="#1E1E1E">
@@ -51,25 +54,26 @@ const StrategyBalancesModal: React.FC<IStrategyBalancesModal> = ({ onClose }) =>
           bodyCells={[
             [
               {
-                valueComponent: <VaultListItem vault={selectedVault} />,
+                valueComponent: <VaultListItem vault={selectedVault} className={classes.vaultItemWhite} />,
               },
               { value: ['0.00523 UNIV2 LP', '$ 20,498.00'], align: 'center' },
               { value: '48.33%', align: 'center', valueColor: 'info.main' },
               { value: '36.44-55.33%', align: 'center' },
             ],
           ]}
+          variant="dark"
         />
       </Box>
-      <Box mt={4} mb={2} className={classes.cardSubheading4}>
+      <Box mt={4} mb={2} ml={1} className={classes.cardSubheading4}>
         Holdings
       </Box>
       <Box>
         <Table
           headCells={[
-            { value: 'Underlying Tokens', align: 'left' },
+            { value: 'Tokens', align: 'left' },
             { value: 'Price', align: 'center' },
             { value: 'Amount', align: 'center' },
-            { value: 'Balance', align: 'center' },
+            { value: 'Balance', align: 'right' },
           ]}
           bodyCells={[
             [
@@ -83,31 +87,34 @@ const StrategyBalancesModal: React.FC<IStrategyBalancesModal> = ({ onClose }) =>
               },
               { value: '14.2', align: 'center' },
               { value: '10.2', align: 'center' },
-              { value: '$ 10,249.00', align: 'center' },
+              { value: '$ 10,249.00', align: 'right' },
             ],
             [
               {
                 valueComponent: (
-                  <Box color="text.secondary" className={classes.cardSubheading2}>
-                    Total
+                  <Box display="flex">
+                    <Box mr={2} className={classes.avatarSmall} />
+                    <Box>wBTC</Box>
                   </Box>
                 ),
-                colSpan: 3,
-                align: 'left',
               },
-              {
-                valueComponent: (
-                  <Box fontWeight="bold" className={classes.cardSubheading4}>
-                    $ 20,498.00
-                  </Box>
-                ),
-                align: 'center',
-              },
+              { value: '36,040.00', align: 'center' },
+              { value: '0.004', align: 'center' },
+              { value: '$ 10,249.00', align: 'right' },
             ],
           ]}
+          variant="dark"
         />
+        <Box mt={2} display="flex" justifyContent="space-between">
+          <Box color="text.secondary" bgcolor="transparent" className={classes.cardSubheading2}>
+            Total
+          </Box>
+          <Box mr={4} fontWeight="bold" bgcolor="transparent!important" className={classes.cardSubheading4}>
+            $ 20,498.00
+          </Box>
+        </Box>
       </Box>
-      <Box mt={4} mb={2} className={classes.cardSubheading4}>
+      <Box mt={4} mb={2} ml={1} className={classes.cardSubheading4}>
         My Boost Breakdown
       </Box>
       <Table
@@ -127,9 +134,25 @@ const StrategyBalancesModal: React.FC<IStrategyBalancesModal> = ({ onClose }) =>
               valueColor: 'info.main',
             },
           ],
+          [
+            {
+              valueComponent: (
+                <Box display="flex">
+                  <Box mr={2} className={classes.avatarSmall} />
+                  <Box>Badgerpack Joyride</Box>
+                </Box>
+              ),
+            },
+            {
+              value: '+11%',
+              align: 'right',
+              valueColor: 'info.main',
+            },
+          ],
         ]}
+        variant="dark"
       />
-      <Box mt={4} mb={2} className={classes.cardSubheading4}>
+      <Box mt={4} mb={2} ml={1} className={classes.cardSubheading4}>
         Transaction History
       </Box>
       <Box>
@@ -148,12 +171,13 @@ const StrategyBalancesModal: React.FC<IStrategyBalancesModal> = ({ onClose }) =>
               { value: '30 May,2020 11:11 PM', align: 'center' },
             ],
             [
-              { value: 'Deposit', align: 'left', valueColor: 'info.main' },
-              { value: '+0.00523 UNIV2 LP', align: 'center' },
+              { value: 'Withdraw', align: 'left', valueColor: 'warning.main' },
+              { value: '-0.00523 UNIV2 LP', align: 'center' },
               { value: '0.00512 ETH', align: 'center' },
               { value: '30 May,2020 11:11 PM', align: 'center' },
             ],
           ]}
+          variant="dark"
         />
       </Box>
     </Box>

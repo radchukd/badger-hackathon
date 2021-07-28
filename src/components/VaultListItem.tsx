@@ -1,7 +1,7 @@
-import { observer } from 'mobx-react-lite';
+import clsx from 'clsx';
 import React from 'react';
 
-import { Box, Chip, ListItem, makeStyles } from '@material-ui/core';
+import { Box, Chip, ListItem, ListItemIcon, ListItemProps, makeStyles } from '@material-ui/core';
 import { Check } from '@material-ui/icons';
 
 import { Vault } from '../mobx/portfolioStore';
@@ -14,14 +14,17 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: theme.spacing(2),
     borderRadius: theme.spacing(1),
     whiteSpace: 'nowrap',
+    color: theme.palette.primary.light,
   },
   selectedVaultItem: {
     '&.Mui-selected': {
+      color: theme.palette.info.main,
       backgroundColor: '#333333',
     },
   },
-  vaultName: {
-    color: theme.palette.primary.light,
+  vaultIcon: {
+    minWidth: 'auto',
+    marginRight: theme.spacing(1),
   },
   vaultChip: {
     fontSize: '10px',
@@ -33,64 +36,68 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export interface IVaultListItem {
+export interface IVaultListItem extends ListItemProps {
   vault: Vault;
   isButton?: boolean;
   onItemClick?: (value: Vault) => void;
   isItemChecked?: boolean;
 }
 
-const VaultListItem = observer(({ vault, isButton, onItemClick, isItemChecked }: IVaultListItem) => {
-  const classes = { ...useStyles() };
+const VaultListItem = React.forwardRef<HTMLLIElement, IVaultListItem>(
+  ({ vault, isButton, onItemClick, isItemChecked, className, ...props }, ref) => {
+    const classes = { ...useStyles() };
 
-  const getVaultIcon = (vault: string): JSX.Element => {
-    if (isItemChecked) return <Check />;
+    const getVaultIcon = (vault: string): JSX.Element => {
+      if (isItemChecked) return <Check color="secondary" />;
 
-    let iconPath = '';
+      let iconPath = '';
 
-    switch (vault) {
-      case 'wBTC/Digg':
-        iconPath = 'DIGG-WBTC.png';
-        break;
-      case 'Badger/wBTC':
-        iconPath = 'BADGER-WBTC.png';
-        break;
-      case 'Wrapped BTC/Digg':
-        iconPath = 'SLP-DIGG-WBTC.png';
-        break;
-      case 'Wrapped BTC/Badger':
-        iconPath = 'SLP-BADGER-WBTC.png';
-        break;
-      case 'Wrapped BTC/Wrapped Ether':
-        iconPath = 'SLP-WBTC-ETH.png';
-        break;
-      case 'crvRenWBTC':
-      case 'renBTC/wBTC/sBTC':
-      case 'tBTC/sBTCCrv LP':
-      case 'crvRenWBTC':
-      default:
-        iconPath = 'UNI-WBTC-DIGG.png';
-    }
+      switch (vault) {
+        case 'wBTC/Digg':
+          iconPath = 'DIGG-WBTC.png';
+          break;
+        case 'Badger/wBTC':
+          iconPath = 'BADGER-WBTC.png';
+          break;
+        case 'Wrapped BTC/Digg':
+          iconPath = 'SLP-DIGG-WBTC.png';
+          break;
+        case 'Wrapped BTC/Badger':
+          iconPath = 'SLP-BADGER-WBTC.png';
+          break;
+        case 'Wrapped BTC/Wrapped Ether':
+          iconPath = 'SLP-WBTC-ETH.png';
+          break;
+        case 'crvRenWBTC':
+        case 'renBTC/wBTC/sBTC':
+        case 'tBTC/sBTCCrv LP':
+        case 'crvRenWBTC':
+        default:
+          iconPath = 'UNI-WBTC-DIGG.png';
+      }
 
-    return <img src={`/assets/${iconPath}`} width="24" height="24" />;
-  };
+      return <img src={`/assets/${iconPath}`} width="24" height="24" />;
+    };
 
-  return (
-    <ListItem
-      button={isButton as any}
-      className={classes.vaultItem}
-      onClick={() => onItemClick && onItemClick(vault)}
-      selected={isItemChecked}
-      classes={{ selected: classes.selectedVaultItem }}
-      data-testid="vault-selector-vault-list-item"
-    >
-      <Box mr={1}>{getVaultIcon(vault.value)}</Box>
-      <Box className={classes.vaultName}>{vault.value}</Box>
-      {vault.tags.map((label, labelIndex) => (
-        <Chip key={labelIndex} size="small" label={label} className={classes.vaultChip} />
-      ))}
-    </ListItem>
-  );
-});
+    return (
+      <ListItem
+        ref={ref}
+        button={isButton as any}
+        className={clsx(classes.vaultItem, className)}
+        onClick={() => onItemClick && onItemClick(vault)}
+        selected={isItemChecked}
+        classes={{ selected: classes.selectedVaultItem }}
+        {...props}
+        data-testid="vault-selector-vault-list-item"
+      >
+        <ListItemIcon className={classes.vaultIcon}>{getVaultIcon(vault.value)}</ListItemIcon>
+        <Box>{vault.value}</Box>
+        {vault.tags.map((label, labelIndex) => (
+          <Chip key={labelIndex} size="small" label={label} className={classes.vaultChip} />
+        ))}
+      </ListItem>
+    );
+  },
+);
 
 export default VaultListItem;

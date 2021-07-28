@@ -50,6 +50,15 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: theme.palette.action.hover,
     },
   },
+  tableBodyDark: {
+    '&:nth-of-type(odd)': {
+      backgroundColor: '#1E1E1E',
+    },
+
+    '&:nth-of-type(even)': {
+      backgroundColor: theme.palette.primary.dark,
+    },
+  },
   clickableTableRow: {
     cursor: 'pointer',
   },
@@ -81,9 +90,10 @@ export interface ITable {
   headCells?: Array<HeadCell>;
   bodyCells: Array<Array<BodyCell>>;
   onRowClick?: (row: Array<BodyCell>) => void;
+  variant?: 'default' | 'dark';
 }
 
-const Table: React.FC<ITable & TableProps> = ({ headCells, bodyCells, onRowClick, ...props }) => {
+const Table: React.FC<ITable & TableProps> = ({ headCells, bodyCells, variant, onRowClick, ...props }) => {
   const classes = { ...useStyles() };
 
   const buildCell = (cell: BodyCell, index: number): JSX.Element => {
@@ -136,7 +146,11 @@ const Table: React.FC<ITable & TableProps> = ({ headCells, bodyCells, onRowClick
             <TableRow
               key={index}
               onClick={() => (onRowClick ? onRowClick(row) : undefined)}
-              className={clsx(classes.tableBodyRow, onRowClick ? classes.clickableTableRow : undefined)}
+              className={clsx(
+                classes.tableBodyRow,
+                variant === 'dark' ? classes.tableBodyDark : undefined,
+                onRowClick ? classes.clickableTableRow : undefined,
+              )}
             >
               {row.map(buildCell)}
             </TableRow>

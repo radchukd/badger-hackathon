@@ -18,7 +18,7 @@ export const accountStore = new AccountStore({ preload: true });
 
 export const portfolioStore = new PortfolioStore();
 
-interface IStoreContext {
+export interface IStoreContext {
   rootStore: RootStore;
   accountStore: AccountStore;
   portfolioStore: PortfolioStore;
