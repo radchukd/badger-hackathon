@@ -1,5 +1,6 @@
 import { action, extendObservable } from 'mobx';
 import fetch from 'node-fetch';
+import testAccount from '../components/__tests__/testAccount.json';
 
 import { Account } from '../model/account.interface';
 import { SettBalance } from '../model/sett-balance.interface';
@@ -32,10 +33,11 @@ export class AccountStore {
   }
 
   loadAccount = action(async (): Promise<void> => {
-    const res = await fetch(`${this.baseUrl}/accounts/0x4e65175f05b4140a0747c29cce997cd4bb7190d4`);
+    //const res = await fetch(`${this.baseUrl}/accounts/0x4e65175f05b4140a0747c29cce997cd4bb7190d4`);
 
-    if (res.ok) this.account = await res.json();
-    else this.account = null;
+    //if (res.ok) this.account = await res.json();
+    //else this.account = null;
+    this.account = testAccount;
   });
 
   loadPrices = action(async (): Promise<void> => {
